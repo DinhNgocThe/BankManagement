@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace BankManagement
 {
     public partial class LoginForm : Form
@@ -67,13 +68,12 @@ namespace BankManagement
         {
 
         }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            SqlConnection conn = new SqlConnection(@"Data Source=UWEW\SQLEXPRESS02;Initial Catalog=UTCBank;Integrated Security=True;Encrypt=False");
+            SqlConnection conn = new SqlConnection($@"Data Source={getServerName.serverName};Initial Catalog=UTCBank;Integrated Security=True;Encrypt=False");
             conn.Open();
 
             SqlCommand sqlCommand = new SqlCommand("select username, password from admin_account where username ='" + username + "'and password='" + password + "'", conn);
