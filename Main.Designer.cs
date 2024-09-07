@@ -28,104 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.btnMaximizeManin = new System.Windows.Forms.PictureBox();
-            this.btnCloseLogin = new System.Windows.Forms.PictureBox();
-            this.btnMinimizeMain = new System.Windows.Forms.PictureBox();
-            this.groupBoxControll = new System.Windows.Forms.GroupBox();
-            this.panelTitleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizeManin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCloseLogin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizeMain)).BeginInit();
-            this.groupBoxControll.SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.panelTitleBarMain = new System.Windows.Forms.Panel();
+            this.imgLogoMain = new System.Windows.Forms.PictureBox();
+            this.lbBMS = new System.Windows.Forms.Label();
+            this.guna2ResizeForm1 = new Guna.UI2.WinForms.Guna2ResizeForm(this.components);
+            this.panelTitleBarMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogoMain)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelTitleBar
+            // panelTitleBarMain
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.Black;
-            this.panelTitleBar.Controls.Add(this.groupBoxControll);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(855, 42);
-            this.panelTitleBar.TabIndex = 0;
-            this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
-            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            this.panelTitleBarMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.panelTitleBarMain.Controls.Add(this.lbBMS);
+            this.panelTitleBarMain.Controls.Add(this.imgLogoMain);
+            this.panelTitleBarMain.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBarMain.ForeColor = System.Drawing.Color.White;
+            this.panelTitleBarMain.Location = new System.Drawing.Point(0, 0);
+            this.panelTitleBarMain.Name = "panelTitleBarMain";
+            this.panelTitleBarMain.Size = new System.Drawing.Size(1200, 58);
+            this.panelTitleBarMain.TabIndex = 0;
+            this.panelTitleBarMain.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBarMain_MouseDown);
             // 
-            // btnMaximizeManin
+            // imgLogoMain
             // 
-            this.btnMaximizeManin.Image = global::BankManagement.Properties.Resources.maximize;
-            this.btnMaximizeManin.Location = new System.Drawing.Point(61, 12);
-            this.btnMaximizeManin.Name = "btnMaximizeManin";
-            this.btnMaximizeManin.Size = new System.Drawing.Size(22, 22);
-            this.btnMaximizeManin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizeManin.TabIndex = 3;
-            this.btnMaximizeManin.TabStop = false;
-            this.btnMaximizeManin.Click += new System.EventHandler(this.btnMaximizeManin_Click);
+            this.imgLogoMain.Image = global::BankManagement.Properties.Resources.logo;
+            this.imgLogoMain.Location = new System.Drawing.Point(17, 4);
+            this.imgLogoMain.Name = "imgLogoMain";
+            this.imgLogoMain.Size = new System.Drawing.Size(50, 50);
+            this.imgLogoMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgLogoMain.TabIndex = 0;
+            this.imgLogoMain.TabStop = false;
             // 
-            // btnCloseLogin
+            // lbBMS
             // 
-            this.btnCloseLogin.Image = global::BankManagement.Properties.Resources.close;
-            this.btnCloseLogin.Location = new System.Drawing.Point(99, 12);
-            this.btnCloseLogin.Name = "btnCloseLogin";
-            this.btnCloseLogin.Size = new System.Drawing.Size(22, 22);
-            this.btnCloseLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCloseLogin.TabIndex = 2;
-            this.btnCloseLogin.TabStop = false;
-            this.btnCloseLogin.Click += new System.EventHandler(this.btnCloseLogin_Click);
+            this.lbBMS.AutoSize = true;
+            this.lbBMS.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBMS.ForeColor = System.Drawing.Color.White;
+            this.lbBMS.Location = new System.Drawing.Point(71, 17);
+            this.lbBMS.Name = "lbBMS";
+            this.lbBMS.Size = new System.Drawing.Size(250, 24);
+            this.lbBMS.TabIndex = 1;
+            this.lbBMS.Text = "Bank Management System";
             // 
-            // btnMinimizeMain
+            // guna2ResizeForm1
             // 
-            this.btnMinimizeMain.Image = global::BankManagement.Properties.Resources.minimize;
-            this.btnMinimizeMain.Location = new System.Drawing.Point(22, 12);
-            this.btnMinimizeMain.Name = "btnMinimizeMain";
-            this.btnMinimizeMain.Size = new System.Drawing.Size(22, 22);
-            this.btnMinimizeMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizeMain.TabIndex = 1;
-            this.btnMinimizeMain.TabStop = false;
-            this.btnMinimizeMain.Click += new System.EventHandler(this.btnMinimizeMain_Click);
-            // 
-            // groupBoxControll
-            // 
-            this.groupBoxControll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxControll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.groupBoxControll.Controls.Add(this.btnCloseLogin);
-            this.groupBoxControll.Controls.Add(this.btnMaximizeManin);
-            this.groupBoxControll.Controls.Add(this.btnMinimizeMain);
-            this.groupBoxControll.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxControll.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.groupBoxControll.Location = new System.Drawing.Point(728, 0);
-            this.groupBoxControll.Name = "groupBoxControll";
-            this.groupBoxControll.Size = new System.Drawing.Size(127, 42);
-            this.groupBoxControll.TabIndex = 1;
-            this.groupBoxControll.TabStop = false;
-            this.groupBoxControll.PaddingChanged += new System.EventHandler(this.groupBoxControll_PaddingChanged);
+            this.guna2ResizeForm1.TargetForm = this;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(855, 450);
-            this.Controls.Add(this.panelTitleBar);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.Controls.Add(this.panelTitleBarMain);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(1200, 700);
             this.Name = "Main";
             this.Text = "Main";
-            this.panelTitleBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizeManin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCloseLogin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizeMain)).EndInit();
-            this.groupBoxControll.ResumeLayout(false);
+            this.panelTitleBarMain.ResumeLayout(false);
+            this.panelTitleBarMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogoMain)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelTitleBar;
-        private System.Windows.Forms.PictureBox btnMinimizeMain;
-        private System.Windows.Forms.PictureBox btnCloseLogin;
-        private System.Windows.Forms.PictureBox btnMaximizeManin;
-        private System.Windows.Forms.GroupBox groupBoxControll;
+        private System.Windows.Forms.Panel panelTitleBarMain;
+        private System.Windows.Forms.PictureBox imgLogoMain;
+        private System.Windows.Forms.Label lbBMS;
+        private Guna.UI2.WinForms.Guna2ResizeForm guna2ResizeForm1;
     }
 }

@@ -73,7 +73,7 @@ namespace BankManagement
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            using (SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-75GGNPLE\MAY1;Initial Catalog=UTCBank;Integrated Security=True;Encrypt=False"))
+            using (SqlConnection conn = new SqlConnection($@"Data Source={getServerName.serverName};Initial Catalog=UTCBank;Integrated Security=True;Encrypt=False"))
             {
                 conn.Open();
 
@@ -92,16 +92,17 @@ namespace BankManagement
                     if (dataTable.Rows.Count > 0)
                     {
                         lblWarningLogin.Text = "";
-                        MessageBox.Show("Login successful!") ;
                         Main main = new Main();
                         main.Show();
-                        //this.Close();
+                        this.Hide();
                     }
                     else
                     {
                         lblWarningLogin.Text = "Wrong username or password!";
                     }
                 }
+
+                conn.Close();
             }
         }
 
