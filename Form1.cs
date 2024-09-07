@@ -92,7 +92,10 @@ namespace BankManagement
                     if (dataTable.Rows.Count > 0)
                     {
                         lblWarningLogin.Text = "";
-                        MessageBox.Show("Login successful!");
+                        MessageBox.Show("Login successful!") ;
+                        Main main = new Main();
+                        main.Show();
+                        //this.Close();
                     }
                     else
                     {
@@ -108,6 +111,11 @@ namespace BankManagement
         }
 
         private void roundControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelTitleBar_Paint(object sender, PaintEventArgs e)
         {
 
         }
