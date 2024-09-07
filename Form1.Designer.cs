@@ -126,6 +126,7 @@
             this.roundControl1.Radius = 10;
             this.roundControl1.Size = new System.Drawing.Size(800, 450);
             this.roundControl1.TabIndex = 4;
+            this.roundControl1.Load += new System.EventHandler(this.roundControl1_Load);
             // 
             // lblAdminLogin
             // 

@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace BankManagement
 {
     public partial class LoginForm : Form
@@ -67,7 +68,6 @@ namespace BankManagement
         {
 
         }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
@@ -103,6 +103,11 @@ namespace BankManagement
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundControl1_Load(object sender, EventArgs e)
         {
 
         }
