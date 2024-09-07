@@ -73,23 +73,33 @@ namespace BankManagement
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            SqlConnection conn = new SqlConnection(@"Data Source=UWEW\SQLEXPRESS02;Initial Catalog=UTCBank;Integrated Security=True;Encrypt=False");
-            conn.Open();
-
-            SqlCommand sqlCommand = new SqlCommand("select username, password from admin_account where username ='" + username + "'and password='" + password + "'", conn);
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
-            DataTable dataTable = new DataTable();
-            sqlDataAdapter.Fill(dataTable);
-            if(dataTable.Rows.Count > 0)
+            using (SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-75GGNPLE\MAY1;Initial Catalog=UTCBank;Integrated Security=True;Encrypt=False"))
             {
-                lblWarningLogin.Text = "";
-                MessageBox.Show("login sucess!");
-            }
-            else
-            {
-                lblWarningLogin.Text = "Wrong username or password!";
-            }
+                conn.Open();
 
+                // Sử dụng câu lệnh có tham số để tránh SQL Injection
+                string query = "SELECT username, password FROM admin_account WHERE username = @username AND password = @password";
+                using (SqlCommand sqlCommand = new SqlCommand(query, conn))
+                {
+                    // Thêm các tham số để ràng buộc giá trị đầu vào
+                    sqlCommand.Parameters.AddWithValue("@username", username);
+                    sqlCommand.Parameters.AddWithValue("@password", password);
+
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+                    DataTable dataTable = new DataTable();
+                    sqlDataAdapter.Fill(dataTable);
+
+                    if (dataTable.Rows.Count > 0)
+                    {
+                        lblWarningLogin.Text = "";
+                        MessageBox.Show("Login successful!");
+                    }
+                    else
+                    {
+                        lblWarningLogin.Text = "Wrong username or password!";
+                    }
+                }
+            }
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
