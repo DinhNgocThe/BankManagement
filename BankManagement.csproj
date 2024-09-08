@@ -126,7 +126,10 @@
     <None Include="Resources\user_icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\account.png" />
     <Content Include="Resources\maximize.png" />
+    <None Include="Resources\notification_bell.png" />
+    <None Include="Resources\staff.png" />
     <None Include="Resources\maximize1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

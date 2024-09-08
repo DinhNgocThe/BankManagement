@@ -74,6 +74,15 @@ namespace BankManagement
             // Lưu trữ kích thước và vị trí ban đầu của form
             normalBounds = this.Bounds;
         }
-        
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ok");
+        }
     }
 }
