@@ -30,8 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelTitleBarMain = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lbStaffName = new System.Windows.Forms.Label();
+            this.btnMinimizeMain = new System.Windows.Forms.PictureBox();
+            this.btnMaximizeMain = new System.Windows.Forms.PictureBox();
+            this.btnCloseMain = new System.Windows.Forms.PictureBox();
             this.lbBMS = new System.Windows.Forms.Label();
+            this.imgLogoMain = new System.Windows.Forms.PictureBox();
             this.guna2ResizeForm1 = new Guna.UI2.WinForms.Guna2ResizeForm(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSetting = new Guna.UI2.WinForms.Guna2Button();
@@ -39,20 +45,14 @@
             this.btnTransaction = new Guna.UI2.WinForms.Guna2Button();
             this.btnAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnCustomer = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnMinimizeMain = new System.Windows.Forms.PictureBox();
-            this.btnMaximizeMain = new System.Windows.Forms.PictureBox();
-            this.btnCloseMain = new System.Windows.Forms.PictureBox();
-            this.imgLogoMain = new System.Windows.Forms.PictureBox();
             this.panelTitleBarMain.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizeMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizeMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoMain)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTitleBarMain
@@ -74,6 +74,28 @@
             this.panelTitleBarMain.TabIndex = 0;
             this.panelTitleBarMain.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBarMain_MouseDown);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::BankManagement.Properties.Resources.staff;
+            this.pictureBox1.Location = new System.Drawing.Point(800, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = global::BankManagement.Properties.Resources.notification_bell;
+            this.pictureBox2.Location = new System.Drawing.Point(1002, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
             // lbStaffName
             // 
             this.lbStaffName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -86,6 +108,42 @@
             this.lbStaffName.TabIndex = 2;
             this.lbStaffName.Text = "Nguyen Anh Vy";
             // 
+            // btnMinimizeMain
+            // 
+            this.btnMinimizeMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizeMain.Image = global::BankManagement.Properties.Resources.minimize;
+            this.btnMinimizeMain.Location = new System.Drawing.Point(1071, 18);
+            this.btnMinimizeMain.Name = "btnMinimizeMain";
+            this.btnMinimizeMain.Size = new System.Drawing.Size(22, 22);
+            this.btnMinimizeMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizeMain.TabIndex = 1;
+            this.btnMinimizeMain.TabStop = false;
+            this.btnMinimizeMain.Click += new System.EventHandler(this.btnMinimizeMain_Click);
+            // 
+            // btnMaximizeMain
+            // 
+            this.btnMaximizeMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximizeMain.Image = global::BankManagement.Properties.Resources.maximize;
+            this.btnMaximizeMain.Location = new System.Drawing.Point(1115, 18);
+            this.btnMaximizeMain.Name = "btnMaximizeMain";
+            this.btnMaximizeMain.Size = new System.Drawing.Size(22, 22);
+            this.btnMaximizeMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximizeMain.TabIndex = 1;
+            this.btnMaximizeMain.TabStop = false;
+            this.btnMaximizeMain.Click += new System.EventHandler(this.btnMaximizeMain_Click);
+            // 
+            // btnCloseMain
+            // 
+            this.btnCloseMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCloseMain.Image = global::BankManagement.Properties.Resources.close;
+            this.btnCloseMain.Location = new System.Drawing.Point(1160, 18);
+            this.btnCloseMain.Name = "btnCloseMain";
+            this.btnCloseMain.Size = new System.Drawing.Size(22, 22);
+            this.btnCloseMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCloseMain.TabIndex = 1;
+            this.btnCloseMain.TabStop = false;
+            this.btnCloseMain.Click += new System.EventHandler(this.btnCloseMain_Click);
+            // 
             // lbBMS
             // 
             this.lbBMS.AutoSize = true;
@@ -96,6 +154,16 @@
             this.lbBMS.Size = new System.Drawing.Size(250, 24);
             this.lbBMS.TabIndex = 1;
             this.lbBMS.Text = "Bank Management System";
+            // 
+            // imgLogoMain
+            // 
+            this.imgLogoMain.Image = global::BankManagement.Properties.Resources.logo;
+            this.imgLogoMain.Location = new System.Drawing.Point(17, 4);
+            this.imgLogoMain.Name = "imgLogoMain";
+            this.imgLogoMain.Size = new System.Drawing.Size(50, 50);
+            this.imgLogoMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgLogoMain.TabIndex = 0;
+            this.imgLogoMain.TabStop = false;
             // 
             // guna2ResizeForm1
             // 
@@ -117,6 +185,7 @@
             // 
             // btnSetting
             // 
+            this.btnSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSetting.CustomBorderColor = System.Drawing.Color.White;
             this.btnSetting.CustomBorderThickness = new System.Windows.Forms.Padding(0, 2, 0, 0);
@@ -218,74 +287,6 @@
             this.btnCustomer.MouseLeave += new System.EventHandler(this.btnCustomer_MouseLeave);
             this.btnCustomer.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnCustomer_MouseMove);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::BankManagement.Properties.Resources.staff;
-            this.pictureBox1.Location = new System.Drawing.Point(800, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::BankManagement.Properties.Resources.notification_bell;
-            this.pictureBox2.Location = new System.Drawing.Point(1002, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(28, 28);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnMinimizeMain
-            // 
-            this.btnMinimizeMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizeMain.Image = global::BankManagement.Properties.Resources.minimize;
-            this.btnMinimizeMain.Location = new System.Drawing.Point(1071, 18);
-            this.btnMinimizeMain.Name = "btnMinimizeMain";
-            this.btnMinimizeMain.Size = new System.Drawing.Size(22, 22);
-            this.btnMinimizeMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizeMain.TabIndex = 1;
-            this.btnMinimizeMain.TabStop = false;
-            this.btnMinimizeMain.Click += new System.EventHandler(this.btnMinimizeMain_Click);
-            // 
-            // btnMaximizeMain
-            // 
-            this.btnMaximizeMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximizeMain.Image = global::BankManagement.Properties.Resources.maximize;
-            this.btnMaximizeMain.Location = new System.Drawing.Point(1115, 18);
-            this.btnMaximizeMain.Name = "btnMaximizeMain";
-            this.btnMaximizeMain.Size = new System.Drawing.Size(22, 22);
-            this.btnMaximizeMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizeMain.TabIndex = 1;
-            this.btnMaximizeMain.TabStop = false;
-            this.btnMaximizeMain.Click += new System.EventHandler(this.btnMaximizeMain_Click);
-            // 
-            // btnCloseMain
-            // 
-            this.btnCloseMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCloseMain.Image = global::BankManagement.Properties.Resources.close;
-            this.btnCloseMain.Location = new System.Drawing.Point(1160, 18);
-            this.btnCloseMain.Name = "btnCloseMain";
-            this.btnCloseMain.Size = new System.Drawing.Size(22, 22);
-            this.btnCloseMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCloseMain.TabIndex = 1;
-            this.btnCloseMain.TabStop = false;
-            this.btnCloseMain.Click += new System.EventHandler(this.btnCloseMain_Click);
-            // 
-            // imgLogoMain
-            // 
-            this.imgLogoMain.Image = global::BankManagement.Properties.Resources.logo;
-            this.imgLogoMain.Location = new System.Drawing.Point(17, 4);
-            this.imgLogoMain.Name = "imgLogoMain";
-            this.imgLogoMain.Size = new System.Drawing.Size(50, 50);
-            this.imgLogoMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgLogoMain.TabIndex = 0;
-            this.imgLogoMain.TabStop = false;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -303,13 +304,13 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.panelTitleBarMain.ResumeLayout(false);
             this.panelTitleBarMain.PerformLayout();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizeMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizeMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoMain)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
