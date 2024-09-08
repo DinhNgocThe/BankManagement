@@ -84,5 +84,40 @@ namespace BankManagement
         {
             MessageBox.Show("ok");
         }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ok Setting");
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ok customer");
+        }
+
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ok Account");
+        }
+
+        private void btnTransaction_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ok Transaction");
+        }
+
+        private void btnLoan_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ok Loan");
+        }
+
+        private void btnCustomer_MouseMove(object sender, MouseEventArgs e)
+        {
+           
+        }
+
+        private void btnCustomer_MouseLeave(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

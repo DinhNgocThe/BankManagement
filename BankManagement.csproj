@@ -126,7 +126,12 @@
     <None Include="Resources\user_icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\setting.png" />
+    <None Include="Resources\transaction.png" />
     <None Include="Resources\account.png" />
+    <None Include="Resources\customer.png" />
+    <None Include="Resources\account1.png" />
+    <None Include="Resources\loan.png" />
     <Content Include="Resources\maximize.png" />
     <None Include="Resources\notification_bell.png" />
     <None Include="Resources\staff.png" />
