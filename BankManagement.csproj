@@ -126,6 +126,7 @@
     <None Include="Resources\user_icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\staff_woman.png" />
     <None Include="Resources\setting.png" />
     <None Include="Resources\transaction.png" />
     <None Include="Resources\account.png" />
