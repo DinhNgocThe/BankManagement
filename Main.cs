@@ -110,5 +110,21 @@ namespace BankManagement
             MessageBox.Show("ok Loan");
         }
 
+        private void btnStaffAvatar_Click(object sender, EventArgs e)
+        {
+            // Sử dụng biến toàn cục infoStaff, không cần khai báo lại
+            InfoStaff infoStaff = new InfoStaff();
+
+            // Lấy tọa độ và điều chỉnh vị trí
+            var buttonScreenPos = btnStaffAvatar.PointToScreen(new System.Drawing.Point(-27, btnStaffAvatar.Height + 5));
+
+            // Đặt vị trí của InfoStaff ngay dưới nút btnStaffAvatar
+            infoStaff.StartPosition = FormStartPosition.Manual;
+            infoStaff.Location = buttonScreenPos;
+
+            // Hiển thị InfoStaff
+            infoStaff.Show(this);
+        }
+
     }
 }
