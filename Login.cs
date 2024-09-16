@@ -20,6 +20,7 @@ namespace BankManagement
         {
             InitializeComponent();
             //this.BackColor = ColorTranslator.FromHtml("#34AB53");
+            btnCloseLogin.HoverState.FillColor = Color.FromArgb(255, 90, 90);
         }
         private void LoginForm_Load(object sender, EventArgs e)
         { 

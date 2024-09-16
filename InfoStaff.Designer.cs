@@ -57,9 +57,9 @@
             this.guna2Panel1.Controls.Add(this.imgStaffAvatarInfoStaffForm);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(280, 274);
+            this.guna2Panel1.Size = new System.Drawing.Size(210, 223);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnLogOutInfoStaffForm
@@ -76,10 +76,10 @@
             this.btnLogOutInfoStaffForm.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnLogOutInfoStaffForm.ImageOffset = new System.Drawing.Point(38, 1);
             this.btnLogOutInfoStaffForm.ImageSize = new System.Drawing.Size(18, 18);
-            this.btnLogOutInfoStaffForm.Location = new System.Drawing.Point(28, 187);
-            this.btnLogOutInfoStaffForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogOutInfoStaffForm.Location = new System.Drawing.Point(21, 152);
+            this.btnLogOutInfoStaffForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogOutInfoStaffForm.Name = "btnLogOutInfoStaffForm";
-            this.btnLogOutInfoStaffForm.Size = new System.Drawing.Size(229, 54);
+            this.btnLogOutInfoStaffForm.Size = new System.Drawing.Size(172, 44);
             this.btnLogOutInfoStaffForm.TabIndex = 4;
             this.btnLogOutInfoStaffForm.Text = "Log out";
             this.btnLogOutInfoStaffForm.TextOffset = new System.Drawing.Point(-15, -1);
@@ -92,9 +92,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbJobPositionInfoStaffForm.AutoSize = true;
             this.lbJobPositionInfoStaffForm.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbJobPositionInfoStaffForm.Location = new System.Drawing.Point(37, 139);
+            this.lbJobPositionInfoStaffForm.Location = new System.Drawing.Point(28, 113);
+            this.lbJobPositionInfoStaffForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbJobPositionInfoStaffForm.Name = "lbJobPositionInfoStaffForm";
-            this.lbJobPositionInfoStaffForm.Size = new System.Drawing.Size(140, 18);
+            this.lbJobPositionInfoStaffForm.Size = new System.Drawing.Size(112, 14);
             this.lbJobPositionInfoStaffForm.TabIndex = 3;
             this.lbJobPositionInfoStaffForm.Text = "Vị trí: Giao dịch viên";
             // 
@@ -105,9 +106,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbBranchInfoStaffForm.AutoSize = true;
             this.lbBranchInfoStaffForm.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBranchInfoStaffForm.Location = new System.Drawing.Point(37, 106);
+            this.lbBranchInfoStaffForm.Location = new System.Drawing.Point(28, 86);
+            this.lbBranchInfoStaffForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbBranchInfoStaffForm.Name = "lbBranchInfoStaffForm";
-            this.lbBranchInfoStaffForm.Size = new System.Drawing.Size(198, 18);
+            this.lbBranchInfoStaffForm.Size = new System.Drawing.Size(160, 14);
             this.lbBranchInfoStaffForm.TabIndex = 3;
             this.lbBranchInfoStaffForm.Text = "Chi nhánh: Cầu Giấy - Hà Nội";
             // 
@@ -119,9 +121,10 @@
             this.lbUserNameInfoStaffForm.AutoSize = true;
             this.lbUserNameInfoStaffForm.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUserNameInfoStaffForm.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lbUserNameInfoStaffForm.Location = new System.Drawing.Point(104, 58);
+            this.lbUserNameInfoStaffForm.Location = new System.Drawing.Point(82, 47);
+            this.lbUserNameInfoStaffForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbUserNameInfoStaffForm.Name = "lbUserNameInfoStaffForm";
-            this.lbUserNameInfoStaffForm.Size = new System.Drawing.Size(79, 14);
+            this.lbUserNameInfoStaffForm.Size = new System.Drawing.Size(64, 12);
             this.lbUserNameInfoStaffForm.TabIndex = 2;
             this.lbUserNameInfoStaffForm.Text = "anhvy@.work";
             // 
@@ -132,9 +135,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbStaffNameInfoStaffForm.AutoSize = true;
             this.lbStaffNameInfoStaffForm.Font = new System.Drawing.Font("Bahnschrift SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStaffNameInfoStaffForm.Location = new System.Drawing.Point(101, 31);
+            this.lbStaffNameInfoStaffForm.Location = new System.Drawing.Point(80, 25);
+            this.lbStaffNameInfoStaffForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbStaffNameInfoStaffForm.Name = "lbStaffNameInfoStaffForm";
-            this.lbStaffNameInfoStaffForm.Size = new System.Drawing.Size(134, 22);
+            this.lbStaffNameInfoStaffForm.Size = new System.Drawing.Size(108, 18);
             this.lbStaffNameInfoStaffForm.TabIndex = 1;
             this.lbStaffNameInfoStaffForm.Text = "Nguyen Anh Vy";
             // 
@@ -144,10 +148,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.imgStaffAvatarInfoStaffForm.Image = global::BankManagement.Properties.Resources.staff_woman;
-            this.imgStaffAvatarInfoStaffForm.Location = new System.Drawing.Point(32, 18);
-            this.imgStaffAvatarInfoStaffForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgStaffAvatarInfoStaffForm.Location = new System.Drawing.Point(24, 15);
+            this.imgStaffAvatarInfoStaffForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.imgStaffAvatarInfoStaffForm.Name = "imgStaffAvatarInfoStaffForm";
-            this.imgStaffAvatarInfoStaffForm.Size = new System.Drawing.Size(75, 60);
+            this.imgStaffAvatarInfoStaffForm.Size = new System.Drawing.Size(56, 49);
             this.imgStaffAvatarInfoStaffForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgStaffAvatarInfoStaffForm.TabIndex = 0;
             this.imgStaffAvatarInfoStaffForm.TabStop = false;
@@ -166,14 +170,14 @@
             // 
             // InfoStaff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(281, 276);
+            this.ClientSize = new System.Drawing.Size(211, 224);
             this.Controls.Add(this.guna2Panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "InfoStaff";
             this.Text = "InfoStaff";
             this.guna2Panel1.ResumeLayout(false);

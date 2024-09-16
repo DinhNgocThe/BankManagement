@@ -95,6 +95,9 @@ namespace BankManagement
         {
             // Lưu trữ kích thước và vị trí ban đầu của form
             normalBounds = this.Bounds;
+            btnCloseMain.HoverState.FillColor = Color.FromArgb(255, 90, 90);
+            btnStaffAvatarMain.HoverState.FillColor = Color.FromArgb(200, 200, 200);
+            btnNotifyMain.HoverState.FillColor = Color.FromArgb(100, 100, 100);
         }
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
@@ -132,13 +135,17 @@ namespace BankManagement
             MessageBox.Show("ok Loan");
         }
 
-        private void btnStaffAvatar_Click(object sender, EventArgs e)
+		private void pictureBox2_Click(object sender, EventArgs e)
+		{
+
+		}
+
+        private void btnStaffAvatarMain_Click(object sender, EventArgs e)
         {
-            // Sử dụng biến toàn cục infoStaff, không cần khai báo lại
             InfoStaff infoStaff = new InfoStaff();
 
             // Lấy tọa độ và điều chỉnh vị trí
-            var buttonScreenPos = btnStaffAvatar.PointToScreen(new System.Drawing.Point(-27, btnStaffAvatar.Height + 5));
+            var buttonScreenPos = btnStaffAvatarMain.PointToScreen(new System.Drawing.Point(-27, btnStaffAvatarMain.Height + 5));
 
             // Đặt vị trí của InfoStaff ngay dưới nút btnStaffAvatar
             infoStaff.StartPosition = FormStartPosition.Manual;
@@ -147,10 +154,5 @@ namespace BankManagement
             // Hiển thị InfoStaff
             infoStaff.Show(this);
         }
-
-		private void pictureBox2_Click(object sender, EventArgs e)
-		{
-
-		}
-	}
+    }
 }
