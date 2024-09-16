@@ -31,6 +31,28 @@ namespace BankManagement
         {
             ReleaseCapture();
             SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+
+            //Su kien double click vao thanh title
+            if (e.Clicks == 2)
+            {
+                if (isMaximized)
+                {
+                    // Chuyển về kích thước bình thường
+                    this.Bounds = normalBounds;
+                    this.FormBorderStyle = FormBorderStyle.None; // Đảm bảo vẫn giữ không có viền
+                    this.WindowState = FormWindowState.Normal;
+                    isMaximized = false;
+                }
+                else
+                {
+                    // Phóng to cửa sổ
+                    normalBounds = this.Bounds; // Lưu lại kích thước bình thường
+                    this.Bounds = Screen.PrimaryScreen.WorkingArea; // Phóng to ra toàn màn hình
+                    this.FormBorderStyle = FormBorderStyle.None; // Đảm bảo vẫn giữ không có viền
+                    this.WindowState = FormWindowState.Maximized;
+                    isMaximized = true;
+                }
+            }
         }
 
 
@@ -125,6 +147,5 @@ namespace BankManagement
             // Hiển thị InfoStaff
             infoStaff.Show(this);
         }
-
     }
 }

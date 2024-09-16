@@ -69,6 +69,7 @@
             this.panelTitleBarMain.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBarMain.ForeColor = System.Drawing.Color.White;
             this.panelTitleBarMain.Location = new System.Drawing.Point(0, 0);
+            this.panelTitleBarMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTitleBarMain.Name = "panelTitleBarMain";
             this.panelTitleBarMain.Size = new System.Drawing.Size(1200, 58);
             this.panelTitleBarMain.TabIndex = 0;
@@ -79,8 +80,9 @@
             this.btnStaffAvatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStaffAvatar.Image = global::BankManagement.Properties.Resources.staff_woman;
             this.btnStaffAvatar.Location = new System.Drawing.Point(783, 4);
+            this.btnStaffAvatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStaffAvatar.Name = "btnStaffAvatar";
-            this.btnStaffAvatar.Size = new System.Drawing.Size(50, 50);
+            this.btnStaffAvatar.Size = new System.Drawing.Size(51, 50);
             this.btnStaffAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnStaffAvatar.TabIndex = 2;
             this.btnStaffAvatar.TabStop = false;
@@ -90,7 +92,8 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::BankManagement.Properties.Resources.notification_bell;
-            this.pictureBox2.Location = new System.Drawing.Point(1002, 13);
+            this.pictureBox2.Location = new System.Drawing.Point(1003, 14);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(28, 28);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -103,7 +106,7 @@
             this.lbStaffName.AutoSize = true;
             this.lbStaffName.Font = new System.Drawing.Font("Bahnschrift SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbStaffName.ForeColor = System.Drawing.Color.White;
-            this.lbStaffName.Location = new System.Drawing.Point(843, 19);
+            this.lbStaffName.Location = new System.Drawing.Point(843, 18);
             this.lbStaffName.Name = "lbStaffName";
             this.lbStaffName.Size = new System.Drawing.Size(123, 21);
             this.lbStaffName.TabIndex = 2;
@@ -114,8 +117,9 @@
             this.btnMinimizeMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizeMain.Image = global::BankManagement.Properties.Resources.minimize;
             this.btnMinimizeMain.Location = new System.Drawing.Point(1071, 18);
+            this.btnMinimizeMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMinimizeMain.Name = "btnMinimizeMain";
-            this.btnMinimizeMain.Size = new System.Drawing.Size(22, 22);
+            this.btnMinimizeMain.Size = new System.Drawing.Size(21, 22);
             this.btnMinimizeMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizeMain.TabIndex = 1;
             this.btnMinimizeMain.TabStop = false;
@@ -126,8 +130,9 @@
             this.btnMaximizeMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizeMain.Image = global::BankManagement.Properties.Resources.maximize;
             this.btnMaximizeMain.Location = new System.Drawing.Point(1115, 18);
+            this.btnMaximizeMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMaximizeMain.Name = "btnMaximizeMain";
-            this.btnMaximizeMain.Size = new System.Drawing.Size(22, 22);
+            this.btnMaximizeMain.Size = new System.Drawing.Size(21, 22);
             this.btnMaximizeMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximizeMain.TabIndex = 1;
             this.btnMaximizeMain.TabStop = false;
@@ -138,8 +143,9 @@
             this.btnCloseMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCloseMain.Image = global::BankManagement.Properties.Resources.close;
             this.btnCloseMain.Location = new System.Drawing.Point(1160, 18);
+            this.btnCloseMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCloseMain.Name = "btnCloseMain";
-            this.btnCloseMain.Size = new System.Drawing.Size(22, 22);
+            this.btnCloseMain.Size = new System.Drawing.Size(21, 22);
             this.btnCloseMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCloseMain.TabIndex = 1;
             this.btnCloseMain.TabStop = false;
@@ -160,8 +166,9 @@
             // 
             this.imgLogoMain.Image = global::BankManagement.Properties.Resources.logo;
             this.imgLogoMain.Location = new System.Drawing.Point(17, 7);
+            this.imgLogoMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgLogoMain.Name = "imgLogoMain";
-            this.imgLogoMain.Size = new System.Drawing.Size(50, 50);
+            this.imgLogoMain.Size = new System.Drawing.Size(51, 50);
             this.imgLogoMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgLogoMain.TabIndex = 0;
             this.imgLogoMain.TabStop = false;
@@ -180,6 +187,7 @@
             this.panel1.Controls.Add(this.btnCustomer);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 58);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(207, 642);
             this.panel1.TabIndex = 1;
@@ -200,7 +208,8 @@
             this.btnSetting.Image = global::BankManagement.Properties.Resources.setting;
             this.btnSetting.ImageOffset = new System.Drawing.Point(-3, 5);
             this.btnSetting.ImageSize = new System.Drawing.Size(29, 29);
-            this.btnSetting.Location = new System.Drawing.Point(43, 552);
+            this.btnSetting.Location = new System.Drawing.Point(43, 551);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Size = new System.Drawing.Size(120, 70);
             this.btnSetting.TabIndex = 1;
@@ -223,7 +232,8 @@
             this.btnLoan.Image = global::BankManagement.Properties.Resources.loan;
             this.btnLoan.ImageOffset = new System.Drawing.Point(-2, -1);
             this.btnLoan.ImageSize = new System.Drawing.Size(33, 33);
-            this.btnLoan.Location = new System.Drawing.Point(12, 296);
+            this.btnLoan.Location = new System.Drawing.Point(12, 295);
+            this.btnLoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLoan.Name = "btnLoan";
             this.btnLoan.Size = new System.Drawing.Size(180, 59);
             this.btnLoan.TabIndex = 0;
@@ -245,7 +255,8 @@
             this.btnTransaction.Image = global::BankManagement.Properties.Resources.transaction;
             this.btnTransaction.ImageOffset = new System.Drawing.Point(2, 0);
             this.btnTransaction.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTransaction.Location = new System.Drawing.Point(12, 205);
+            this.btnTransaction.Location = new System.Drawing.Point(12, 206);
+            this.btnTransaction.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTransaction.Name = "btnTransaction";
             this.btnTransaction.Size = new System.Drawing.Size(180, 59);
             this.btnTransaction.TabIndex = 0;
@@ -268,6 +279,7 @@
             this.btnAccount.ImageOffset = new System.Drawing.Point(-2, 0);
             this.btnAccount.ImageSize = new System.Drawing.Size(32, 32);
             this.btnAccount.Location = new System.Drawing.Point(12, 114);
+            this.btnAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAccount.Name = "btnAccount";
             this.btnAccount.Size = new System.Drawing.Size(180, 59);
             this.btnAccount.TabIndex = 0;
@@ -289,6 +301,7 @@
             this.btnCustomer.Image = global::BankManagement.Properties.Resources.customer;
             this.btnCustomer.ImageSize = new System.Drawing.Size(32, 32);
             this.btnCustomer.Location = new System.Drawing.Point(12, 23);
+            this.btnCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Size = new System.Drawing.Size(180, 59);
             this.btnCustomer.TabIndex = 0;
@@ -306,6 +319,7 @@
             this.Controls.Add(this.panelTitleBarMain);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1200, 700);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

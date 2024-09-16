@@ -14,7 +14,7 @@
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
+            { 
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnLogOutInfoStaffForm = new Guna.UI2.WinForms.Guna2Button();
             this.lbJobPositionInfoStaffForm = new System.Windows.Forms.Label();
@@ -35,6 +36,7 @@
             this.lbUserNameInfoStaffForm = new System.Windows.Forms.Label();
             this.lbStaffNameInfoStaffForm = new System.Windows.Forms.Label();
             this.imgStaffAvatarInfoStaffForm = new System.Windows.Forms.PictureBox();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgStaffAvatarInfoStaffForm)).BeginInit();
             this.SuspendLayout();
@@ -54,9 +56,10 @@
             this.guna2Panel1.Controls.Add(this.lbStaffNameInfoStaffForm);
             this.guna2Panel1.Controls.Add(this.imgStaffAvatarInfoStaffForm);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(13)))), ((int)(((byte)(13)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(2, 3);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(280, 275);
+            this.guna2Panel1.Size = new System.Drawing.Size(280, 274);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnLogOutInfoStaffForm
@@ -74,6 +77,7 @@
             this.btnLogOutInfoStaffForm.ImageOffset = new System.Drawing.Point(38, 1);
             this.btnLogOutInfoStaffForm.ImageSize = new System.Drawing.Size(18, 18);
             this.btnLogOutInfoStaffForm.Location = new System.Drawing.Point(28, 187);
+            this.btnLogOutInfoStaffForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogOutInfoStaffForm.Name = "btnLogOutInfoStaffForm";
             this.btnLogOutInfoStaffForm.Size = new System.Drawing.Size(229, 54);
             this.btnLogOutInfoStaffForm.TabIndex = 4;
@@ -128,7 +132,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbStaffNameInfoStaffForm.AutoSize = true;
             this.lbStaffNameInfoStaffForm.Font = new System.Drawing.Font("Bahnschrift SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStaffNameInfoStaffForm.Location = new System.Drawing.Point(102, 31);
+            this.lbStaffNameInfoStaffForm.Location = new System.Drawing.Point(101, 31);
             this.lbStaffNameInfoStaffForm.Name = "lbStaffNameInfoStaffForm";
             this.lbStaffNameInfoStaffForm.Size = new System.Drawing.Size(134, 22);
             this.lbStaffNameInfoStaffForm.TabIndex = 1;
@@ -141,21 +145,35 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.imgStaffAvatarInfoStaffForm.Image = global::BankManagement.Properties.Resources.staff_woman;
             this.imgStaffAvatarInfoStaffForm.Location = new System.Drawing.Point(32, 18);
+            this.imgStaffAvatarInfoStaffForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgStaffAvatarInfoStaffForm.Name = "imgStaffAvatarInfoStaffForm";
             this.imgStaffAvatarInfoStaffForm.Size = new System.Drawing.Size(75, 60);
             this.imgStaffAvatarInfoStaffForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgStaffAvatarInfoStaffForm.TabIndex = 0;
             this.imgStaffAvatarInfoStaffForm.TabStop = false;
             // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.BorderRadius = 27;
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockForm = false;
+            this.guna2BorderlessForm1.DockIndicatorColor = System.Drawing.Color.Transparent;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.HasFormShadow = false;
+            this.guna2BorderlessForm1.ResizeForm = false;
+            this.guna2BorderlessForm1.ShadowColor = System.Drawing.Color.Transparent;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
             // InfoStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(285, 280);
+            this.ClientSize = new System.Drawing.Size(281, 276);
             this.Controls.Add(this.guna2Panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "InfoStaff";
             this.Text = "InfoStaff";
             this.guna2Panel1.ResumeLayout(false);
@@ -174,5 +192,6 @@
         private System.Windows.Forms.PictureBox imgStaffAvatarInfoStaffForm;
         private System.Windows.Forms.Label lbJobPositionInfoStaffForm;
         private Guna.UI2.WinForms.Guna2Button btnLogOutInfoStaffForm;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }
