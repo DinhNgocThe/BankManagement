@@ -60,38 +60,38 @@ namespace BankManagement
         private bool isMaximized = false;
         private Rectangle normalBounds;
 
-        private void btnCloseMain_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+		private void btnClose_Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
 
-        private void btnMinimizeMain_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
+		private void btnMinimize_Click(object sender, EventArgs e)
+		{
+			this.WindowState = FormWindowState.Minimized;
+		}
 
-        private void btnMaximizeMain_Click(object sender, EventArgs e)
-        {
-            if (isMaximized)
-            {
-                // Chuyển về kích thước bình thường
-                this.Bounds = normalBounds;
-                this.FormBorderStyle = FormBorderStyle.None; // Đảm bảo vẫn giữ không có viền
-                this.WindowState = FormWindowState.Normal;
-                isMaximized = false;
-            }
-            else
-            {
-                // Phóng to cửa sổ
-                normalBounds = this.Bounds; // Lưu lại kích thước bình thường
-                this.Bounds = Screen.PrimaryScreen.WorkingArea; // Phóng to ra toàn màn hình
-                this.FormBorderStyle = FormBorderStyle.None; // Đảm bảo vẫn giữ không có viền
-                this.WindowState = FormWindowState.Maximized;
-                isMaximized = true;
-            }
-        }
+		private void btnMaximize_Click(object sender, EventArgs e)
+		{
+			if (isMaximized)
+			{
+				// Chuyển về kích thước bình thường
+				this.Bounds = normalBounds;
+				this.FormBorderStyle = FormBorderStyle.None; // Đảm bảo vẫn giữ không có viền
+				this.WindowState = FormWindowState.Normal;
+				isMaximized = false;
+			}
+			else
+			{
+				// Phóng to cửa sổ
+				normalBounds = this.Bounds; // Lưu lại kích thước bình thường
+				this.Bounds = Screen.PrimaryScreen.WorkingArea; // Phóng to ra toàn màn hình
+				this.FormBorderStyle = FormBorderStyle.None; // Đảm bảo vẫn giữ không có viền
+				this.WindowState = FormWindowState.Maximized;
+				isMaximized = true;
+			}
+		}
 
-        private void Main_Load(object sender, EventArgs e)
+		private void Main_Load(object sender, EventArgs e)
         {
             // Lưu trữ kích thước và vị trí ban đầu của form
             normalBounds = this.Bounds;
@@ -147,5 +147,10 @@ namespace BankManagement
             // Hiển thị InfoStaff
             infoStaff.Show(this);
         }
-    }
+
+		private void pictureBox2_Click(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

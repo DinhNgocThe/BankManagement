@@ -8,7 +8,7 @@ namespace BankManagement
 {
     internal class getServerName
     {
-        public static string serverName = "UWEW\\SQLEXPRESS02";
+        public static string serverName = "LAPTOP-75GGNPLE\\MAY1";
 
     }
 }

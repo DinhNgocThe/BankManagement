@@ -26,15 +26,15 @@ namespace BankManagement
 
         }
 
-        private void btnCloseLogin_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+		private void btnLoginClose_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 
-        private void btnMinimizeLogin_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
+		private void btnLoginMinimize_Click(object sender, EventArgs e)
+		{
+			this.WindowState = FormWindowState.Minimized;
+		}
 
         private void txtUTCBank_Click(object sender, EventArgs e)
         {
@@ -120,5 +120,5 @@ namespace BankManagement
         {
 
         }
-    }
+	}
 }
