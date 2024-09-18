@@ -15,15 +15,13 @@ namespace BankManagement
         public InfoStaff()
         {
             InitializeComponent();
-            // Ẩn form khỏi thanh taskbar
-            this.ShowInTaskbar = false;
-            // Đăng ký sự kiện Deactivate để đóng form khi mất focus
-            this.Deactivate += new EventHandler(InfoStaff_Deactivate);
-        }
+            this.ShowInTaskbar = false; // Ẩn form khỏi thanh taskbar 
+            this.Deactivate += new EventHandler(InfoStaff_Deactivate); // Đăng ký sự kiện Deactivate để đóng form khi mất focus
+		}
         // Hàm xử lý sự kiện Deactivate
         private void InfoStaff_Deactivate(object sender, EventArgs e)
         {
-            this.Close(); // Đóng form khi mất tiêu điểm
+            this.Close(); //Đóng form khi mất tiêu điểm
         }
 
         private void btnLogOutInfoStaffForm_Click(object sender, EventArgs e)
