@@ -14,10 +14,13 @@ namespace BankManagement
 {
     public partial class Main : Form
     {
-        public Main()
+		private int staffId;
+        public Main(int staffId)
         {
             InitializeComponent();
             this.Load += Main_Load;
+
+			this.staffId = staffId;//Nhận dữ liệu từ LoginForm
 		}
 
 		//Begin - Hỗ trợ kéo thả khi giữ click vào thanh title 
@@ -186,7 +189,7 @@ namespace BankManagement
 		}
 		private void btnStaffAvatarMain_Click(object sender, EventArgs e)
         {
-			InfoStaff infoStaff = new InfoStaff();
+			InfoStaff infoStaff = new InfoStaff(staffId); //Truyền dữ liệu đến InfoStaffForm
 			// Lấy tọa độ và điều chỉnh vị trí
 			var buttonScreenPos = btnStaffAvatarMain.PointToScreen(new System.Drawing.Point(-27, btnStaffAvatarMain.Height + 5));
 

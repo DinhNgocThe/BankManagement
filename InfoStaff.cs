@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankManagement.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,18 @@ namespace BankManagement
 {
     public partial class InfoStaff : Form
     {
-        public InfoStaff()
+        private Staff staff;
+        private StaffRepository _staffRepository;
+        private int staffId;
+        public InfoStaff(int staffId)
         {
             InitializeComponent();
+            this.staffId = staffId; //Nhận dữ liệu từ Main
+
             this.ShowInTaskbar = false; // Ẩn form khỏi thanh taskbar 
             this.Deactivate += new EventHandler(InfoStaff_Deactivate); // Đăng ký sự kiện Deactivate để đóng form khi mất focus
+
+            this._staffRepository = new StaffRepository();
 		}
         // Hàm xử lý sự kiện Deactivate
         private void InfoStaff_Deactivate(object sender, EventArgs e)
@@ -44,5 +52,18 @@ namespace BankManagement
             // Thoát ứng dụng hiện tại
             Application.Exit();
         }
-    }
+
+		private void InfoStaff_Load(object sender, EventArgs e)
+		{
+            
+            this.staff = _staffRepository.GetStaffById(this.staffId);
+            if (this.staff != null)
+            {
+                lbStaffNameInfoStaffForm.Text = staff.GetName();
+                lbUserNameInfoStaffForm.Text = staff.GetUsername();
+                lbBranchInfoStaffForm.Text = "Chi nhánh: " + staff.GetWorkingBranch();
+                lbJobPositionInfoStaffForm.Text = "Vị trí: " + staff.GetJobPosition();
+            }
+		}
+	}
 }

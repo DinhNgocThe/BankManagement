@@ -90,7 +90,7 @@ namespace BankManagement
         {
 			string username = txtUsername.Text; //Lấy username
 			string password = txtPassword.Text; //Lấy password
-			//string hashedPassword = ComputeSha256Hash(password); //Mã hoá mật khẩu trước khi kiểm tra
+			string hashedPassword = ComputeSha256Hash(password); //Mã hoá mật khẩu trước khi kiểm tra
 
 			try
 			{
@@ -98,20 +98,23 @@ namespace BankManagement
 				{
 					conn.Open();
 
-					string query = "SELECT 1 FROM admin_account WHERE username = @username AND password = @password";
+					string query = "SELECT id FROM admin_account WHERE username = @username AND password = @password";
 					// Sử dụng câu lệnh có tham số để tránh SQL Injection
 
 					using (SqlCommand sqlCommand = new SqlCommand(query, conn))
 					{
 						// Thêm các tham số để ràng buộc giá trị đầu vào
 						sqlCommand.Parameters.AddWithValue("@username", username); //Thay thế username vào tham số @username ở câu truy vấn
-						sqlCommand.Parameters.AddWithValue("@password", password); //Tương tự như username
+						sqlCommand.Parameters.AddWithValue("@password", hashedPassword); //Tương tự như username
 
 						var result = sqlCommand.ExecuteScalar(); //Trả về giá trị của câu truy vấn
 						if (result != null) //Trường hợp có kết quả
 						{
+							int staffId = Convert.ToInt32(result); // Chuyển đổi giá trị trả về thành int chuẩn bị truyền dữ liệu đến Main -> InfoStaff
+
+
 							lblWarningLogin.Text = "";
-							Main main = new Main();
+							Main main = new Main(staffId);
 							main.Show();
 							this.Hide();
 						}
