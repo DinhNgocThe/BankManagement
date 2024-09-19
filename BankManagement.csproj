@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Extensions\GraphicsExtension.cs" />
     <Compile Include="InfoStaff.cs">
       <SubType>Form</SubType>
@@ -80,6 +86,9 @@
     <Compile Include="RoundControl.Designer.cs">
       <DependentUpon>RoundControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoStaff.resx">
       <DependentUpon>InfoStaff.cs</DependentUpon>
     </EmbeddedResource>

@@ -18,7 +18,7 @@ namespace BankManagement
         {
             InitializeComponent();
             this.Load += Main_Load;
-        }
+		}
 
 		//Begin - Hỗ trợ kéo thả khi giữ click vào thanh title 
 		public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -101,16 +101,14 @@ namespace BankManagement
             btnCloseMain.HoverState.FillColor = Color.FromArgb(255, 90, 90);
             btnStaffAvatarMain.HoverState.FillColor = Color.FromArgb(200, 200, 200);
             btnNotifyMain.HoverState.FillColor = Color.FromArgb(100, 100, 100);
-        }
+
+			// Gọi trực tiếp phương thức xử lý sự kiện Click của btnCustomer
+			btnCustomer_Click(this, EventArgs.Empty);
+		}
 
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("ok");
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
@@ -118,25 +116,69 @@ namespace BankManagement
             MessageBox.Show("ok Setting");
         }
 
-        private void btnCustomer_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("ok customer");
-        }
 
-        private void btnAccount_Click(object sender, EventArgs e)
+		private CustomerForm customerForm;
+
+		private void btnCustomer_Click(object sender, EventArgs e)
+		{
+			btnCustomer.FillColor = Color.FromArgb(15, 149, 123); //Đổi màu khi click, set màu các btn khác về ban đầu
+			btnAccount.FillColor = Color.FromArgb(60, 61, 55);
+			btnTransaction.FillColor = Color.FromArgb(60, 61, 55);
+			btnLoan.FillColor = Color.FromArgb(60, 61, 55);
+
+			//Begin - mở form CustomerForm
+			if (customerForm == null || customerForm.IsDisposed) // Kiểm tra nếu form chưa được khởi tạo hoặc đã bị đóng
+			{
+				customerForm = new CustomerForm();
+				customerForm.StartPosition = FormStartPosition.Manual;
+				//customerForm.Size = new Size(this.Width - 161, this.Height - 53);
+				customerForm.Location = new Point(this.Location.X + 158 + (this.Width - 158 - customerForm.Width) / 2, this.Location.Y + 50);
+				customerForm.Height = this.Height - 53; //Chỉnh độ cao của form CustomerForm
+				customerForm.Show(this);
+			}
+			else
+			{
+				// Nếu form đã mở, chỉ cần kích hoạt và đưa nó lên trên cùng
+				customerForm.BringToFront();
+				customerForm.Activate();
+			}
+			//End - mở form CustomerForm
+
+
+		}
+
+		private void btnAccount_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("ok Account");
-        }
+			btnCustomer.FillColor = Color.FromArgb(60, 61, 55); 
+			btnAccount.FillColor = Color.FromArgb(15, 149, 123); //Đổi màu khi click, set màu các btn khác về ban đầu
+			btnTransaction.FillColor = Color.FromArgb(60, 61, 55);
+			btnLoan.FillColor = Color.FromArgb(60, 61, 55);
+
+			//Đóng các form khác
+			customerForm.Close();
+		}
 
         private void btnTransaction_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("ok Transaction");
-        }
+			btnCustomer.FillColor = Color.FromArgb(60, 61, 55);
+			btnAccount.FillColor = Color.FromArgb(60, 61, 55); 
+			btnTransaction.FillColor = Color.FromArgb(15, 149, 123); //Đổi màu khi click, set màu các btn khác về ban đầu
+			btnLoan.FillColor = Color.FromArgb(60, 61, 55);
+
+			//Đóng các form khác
+			customerForm.Close();
+		}
 
         private void btnLoan_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("ok Loan");
-        }
+			btnCustomer.FillColor = Color.FromArgb(60, 61, 55);
+			btnAccount.FillColor = Color.FromArgb(60, 61, 55);
+			btnTransaction.FillColor = Color.FromArgb(60, 61, 55); 
+			btnLoan.FillColor = Color.FromArgb(15, 149, 123); //Đổi màu khi click, set màu các btn khác về ban đầu
+
+			//Đóng các form khác
+			customerForm.Close();
+		}
 
 		private void pictureBox2_Click(object sender, EventArgs e)
 		{
@@ -155,5 +197,27 @@ namespace BankManagement
             // Hiển thị InfoStaff
             infoStaff.Show(this);
         }
-    }
+
+		private void Main_LocationChanged(object sender, EventArgs e) //Cập nhật form con khi di chuyển form
+		{
+			UpdateCustomerFormSizeAndPosition();
+		}
+
+		private void UpdateCustomerFormSizeAndPosition()
+		{
+			if (customerForm != null && !customerForm.IsDisposed)
+			{
+				//customerForm.Size = new Size(this.Width - 161, this.Height - 53);
+
+				// Đặt vị trí của Form con và chỉnh độ cao
+				customerForm.Location = new Point(this.Location.X + 158 + (this.Width - 158 - customerForm.Width) / 2, this.Location.Y + 50);
+				customerForm.Height = this.Height - 53;
+			}
+		}
+
+		private void Main_Resize(object sender, EventArgs e) //Cập nhật form con khi resize
+		{
+			UpdateCustomerFormSizeAndPosition();
+		}
+	}
 }

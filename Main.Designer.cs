@@ -39,7 +39,7 @@
 			this.lbBMS = new System.Windows.Forms.Label();
 			this.imgLogoMain = new System.Windows.Forms.PictureBox();
 			this.guna2ResizeForm1 = new Guna.UI2.WinForms.Guna2ResizeForm(this.components);
-			this.panel1 = new System.Windows.Forms.Panel();
+			this.panelLeftBarMain = new System.Windows.Forms.Panel();
 			this.lbLine = new System.Windows.Forms.Label();
 			this.btnSetting = new Guna.UI2.WinForms.Guna2Button();
 			this.btnLoan = new Guna.UI2.WinForms.Guna2Button();
@@ -48,7 +48,7 @@
 			this.btnCustomer = new Guna.UI2.WinForms.Guna2Button();
 			this.panelTitleBarMain.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.imgLogoMain)).BeginInit();
-			this.panel1.SuspendLayout();
+			this.panelLeftBarMain.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panelTitleBarMain
@@ -207,21 +207,21 @@
 			// 
 			this.guna2ResizeForm1.TargetForm = this;
 			// 
-			// panel1
+			// panelLeftBarMain
 			// 
-			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-			this.panel1.Controls.Add(this.lbLine);
-			this.panel1.Controls.Add(this.btnSetting);
-			this.panel1.Controls.Add(this.btnLoan);
-			this.panel1.Controls.Add(this.btnTransaction);
-			this.panel1.Controls.Add(this.btnAccount);
-			this.panel1.Controls.Add(this.btnCustomer);
-			this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panel1.Location = new System.Drawing.Point(0, 47);
-			this.panel1.Margin = new System.Windows.Forms.Padding(2);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(155, 653);
-			this.panel1.TabIndex = 1;
+			this.panelLeftBarMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+			this.panelLeftBarMain.Controls.Add(this.lbLine);
+			this.panelLeftBarMain.Controls.Add(this.btnSetting);
+			this.panelLeftBarMain.Controls.Add(this.btnLoan);
+			this.panelLeftBarMain.Controls.Add(this.btnTransaction);
+			this.panelLeftBarMain.Controls.Add(this.btnAccount);
+			this.panelLeftBarMain.Controls.Add(this.btnCustomer);
+			this.panelLeftBarMain.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panelLeftBarMain.Location = new System.Drawing.Point(0, 47);
+			this.panelLeftBarMain.Margin = new System.Windows.Forms.Padding(2);
+			this.panelLeftBarMain.Name = "panelLeftBarMain";
+			this.panelLeftBarMain.Size = new System.Drawing.Size(155, 653);
+			this.panelLeftBarMain.TabIndex = 1;
 			// 
 			// lbLine
 			// 
@@ -330,6 +330,7 @@
 			// 
 			// btnCustomer
 			// 
+			this.btnCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.btnCustomer.BorderRadius = 15;
 			this.btnCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -356,20 +357,22 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.ClientSize = new System.Drawing.Size(1200, 700);
-			this.Controls.Add(this.panel1);
+			this.Controls.Add(this.panelLeftBarMain);
 			this.Controls.Add(this.panelTitleBarMain);
 			this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Margin = new System.Windows.Forms.Padding(2);
-			this.MinimumSize = new System.Drawing.Size(1000, 600);
+			this.MinimumSize = new System.Drawing.Size(1200, 700);
 			this.Name = "Main";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Main";
 			this.Load += new System.EventHandler(this.Main_Load);
+			this.LocationChanged += new System.EventHandler(this.Main_LocationChanged);
+			this.Resize += new System.EventHandler(this.Main_Resize);
 			this.panelTitleBarMain.ResumeLayout(false);
 			this.panelTitleBarMain.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.imgLogoMain)).EndInit();
-			this.panel1.ResumeLayout(false);
+			this.panelLeftBarMain.ResumeLayout(false);
 			this.ResumeLayout(false);
 
         }
@@ -380,7 +383,7 @@
         private System.Windows.Forms.PictureBox imgLogoMain;
         private System.Windows.Forms.Label lbBMS;
         private Guna.UI2.WinForms.Guna2ResizeForm guna2ResizeForm1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelLeftBarMain;
         private System.Windows.Forms.Label lbStaffName;
         private Guna.UI2.WinForms.Guna2Button btnCustomer;
         private Guna.UI2.WinForms.Guna2Button btnAccount;
