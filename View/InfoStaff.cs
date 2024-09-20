@@ -26,12 +26,35 @@ namespace BankManagement
 
             this._staffRepository = new StaffRepository();
 		}
-        // Hàm xử lý sự kiện Deactivate
-        private void InfoStaff_Deactivate(object sender, EventArgs e)
+
+
+
+        //Cập nhật dữ liệu form
+		private void InfoStaff_Load(object sender, EventArgs e)
+		{
+
+			this.staff = _staffRepository.GetStaffById(this.staffId);
+			if (this.staff != null)
+			{
+				lbStaffNameInfoStaffForm.Text = staff.GetName();
+				lbUserNameInfoStaffForm.Text = staff.GetUsername();
+				lbBranchInfoStaffForm.Text = "Chi nhánh: " + staff.GetWorkingBranch();
+				lbJobPositionInfoStaffForm.Text = "Vị trí: " + staff.GetJobPosition();
+			}
+		}
+
+
+
+
+		//Hàm xử lý sự kiện Deactivate
+		private void InfoStaff_Deactivate(object sender, EventArgs e)
         {
             this.Close(); //Đóng form khi mất tiêu điểm
         }
 
+
+
+        //Xử lí sự kiện logout
         private void btnLogOutInfoStaffForm_Click(object sender, EventArgs e)
         {
             // Đóng tất cả các form đang mở
@@ -43,7 +66,6 @@ namespace BankManagement
             // Khởi động lại ứng dụng
             RestartApplication();
         }
-
         private void RestartApplication()
         {
             // Khởi động lại ứng dụng bằng cách sử dụng lệnh debug của Visual Studio
@@ -52,18 +74,5 @@ namespace BankManagement
             // Thoát ứng dụng hiện tại
             Application.Exit();
         }
-
-		private void InfoStaff_Load(object sender, EventArgs e)
-		{
-            
-            this.staff = _staffRepository.GetStaffById(this.staffId);
-            if (this.staff != null)
-            {
-                lbStaffNameInfoStaffForm.Text = staff.GetName();
-                lbUserNameInfoStaffForm.Text = staff.GetUsername();
-                lbBranchInfoStaffForm.Text = "Chi nhánh: " + staff.GetWorkingBranch();
-                lbJobPositionInfoStaffForm.Text = "Vị trí: " + staff.GetJobPosition();
-            }
-		}
 	}
 }

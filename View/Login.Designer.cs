@@ -61,7 +61,6 @@
 			this.lblUTCBank.Size = new System.Drawing.Size(110, 21);
 			this.lblUTCBank.TabIndex = 2;
 			this.lblUTCBank.Text = "UTC Bank";
-			this.lblUTCBank.Click += new System.EventHandler(this.txtUTCBank_Click);
 			// 
 			// panelTitleBar
 			// 
@@ -74,7 +73,6 @@
 			this.panelTitleBar.Name = "panelTitleBar";
 			this.panelTitleBar.Size = new System.Drawing.Size(900, 34);
 			this.panelTitleBar.TabIndex = 3;
-			this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
 			this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelTitleBarLogin_MouseDown);
 			// 
 			// btnMinimizeLogin
@@ -171,7 +169,6 @@
 			this.txtUsername.SelectedText = "";
 			this.txtUsername.Size = new System.Drawing.Size(195, 37);
 			this.txtUsername.TabIndex = 0;
-			this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
 			// 
 			// txtPassword
 			// 
@@ -254,7 +251,6 @@
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox1.TabIndex = 5;
 			this.pictureBox1.TabStop = false;
-			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
 			// 
 			// imgLogo
 			// 
@@ -292,7 +288,6 @@
 			this.roundControl1.Radius = 10;
 			this.roundControl1.Size = new System.Drawing.Size(600, 366);
 			this.roundControl1.TabIndex = 4;
-			this.roundControl1.Load += new System.EventHandler(this.roundControl1_Load);
 			// 
 			// LoginForm
 			// 
@@ -320,7 +315,6 @@
 			this.Name = "LoginForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form1";
-			this.Load += new System.EventHandler(this.LoginForm_Load);
 			this.panelTitleBar.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.imgLoginForm)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

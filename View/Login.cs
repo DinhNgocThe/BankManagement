@@ -17,20 +17,16 @@ namespace BankManagement
 {
     public partial class LoginForm : Form
     {
-
-		private string connectionString = $@"Data Source={getServerName.serverName};Initial Catalog=UTCBank;Integrated Security=True;Encrypt=False";
-		//Chuỗi kết nối csdl
 		public LoginForm()
         {
             InitializeComponent();
             //this.BackColor = ColorTranslator.FromHtml("#34AB53");
             btnCloseLogin.HoverState.FillColor = Color.FromArgb(255, 90, 90); //Thuộc tính hover btnClose "đỏ"
         }
-        private void LoginForm_Load(object sender, EventArgs e)
-        { 
 
-        }
 
+
+		//Btn đóng, thu nhỏ ứng dụng
 		private void btnLoginClose_Click(object sender, EventArgs e)
 		{
             Application.Exit(); //Đóng ứng dụng
@@ -41,12 +37,9 @@ namespace BankManagement
 			this.WindowState = FormWindowState.Minimized;  //Thu nhỏ ứng dụng
 		}
 
-        private void txtUTCBank_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        //Begin - Hỗ trợ kéo thả khi giữ click vào thanh title 
+        //Begin - Hỗ trợ kéo thả khi giữ click vào thanh title
         public const int WM_NCLBUTTONDOWN = 0xA1; 
         //0xA1 là mã Hex đại diện cho sự kiện khi Windows khi nhấn nút trái chuột vào vùng không chứa title bar
 
@@ -71,21 +64,11 @@ namespace BankManagement
         }
 		//End - Hỗ trợ kéo thả khi giữ click vào thanh title
 
-		private void panelLogin_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+		//Sự kiện login
+		//Chuỗi kết nối csdl
+		private string connectionString = $@"Data Source={getServerName.serverName};Initial Catalog=UTCBank;Integrated Security=True;Encrypt=False";
 		private void btnLogin_Click(object sender, EventArgs e)
         {
 			string username = txtUsername.Text; //Lấy username
@@ -146,20 +129,5 @@ namespace BankManagement
 				return builder.ToString();
 			}
 		}
-
-		private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundControl1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelTitleBar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 	}
 }
