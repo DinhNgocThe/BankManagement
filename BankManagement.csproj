@@ -52,6 +52,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ViewModel\InfoStaffViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="View\CustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,24 +61,24 @@
       <DependentUpon>CustomerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Extensions\GraphicsExtension.cs" />
-    <Compile Include="View\InfoStaff.cs">
+    <Compile Include="View\InfoStaffForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\InfoStaff.Designer.cs">
-      <DependentUpon>InfoStaff.cs</DependentUpon>
+    <Compile Include="View\InfoStaffForm.Designer.cs">
+      <DependentUpon>InfoStaffForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Login.cs">
+    <Compile Include="View\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="View\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="getServerName.cs" />
-    <Compile Include="View\Main.cs">
+    <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="View\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Staff.cs" />
     <Compile Include="Model\StaffRepository.cs" />
@@ -91,14 +93,14 @@
     <EmbeddedResource Include="View\CustomerForm.resx">
       <DependentUpon>CustomerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\InfoStaff.resx">
-      <DependentUpon>InfoStaff.cs</DependentUpon>
+    <EmbeddedResource Include="View\InfoStaffForm.resx">
+      <DependentUpon>InfoStaffForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="View\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="View\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -154,13 +156,15 @@
     <None Include="Resources\account1.png" />
     <None Include="Resources\loan.png" />
     <None Include="Resources\logout.png" />
+    <None Include="Image\StaffImage\staff_woman.png" />
+    <None Include="Image\StaffImage\staff_man.png" />
     <Content Include="Resources\maximize.png" />
     <None Include="Resources\notification_bell.png" />
     <None Include="Resources\staff.png" />
     <None Include="Resources\maximize1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewModel\" />
+    <Folder Include="Image\CustomerImage\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
