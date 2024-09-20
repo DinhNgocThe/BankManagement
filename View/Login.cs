@@ -81,7 +81,7 @@ namespace BankManagement
 				{
 					conn.Open();
 
-					string query = "SELECT id FROM admin_account WHERE username = @username AND password = @password";
+					string query = "SELECT staff_account_id FROM staff_account WHERE staff_account_username = @username AND staff_account_password = @password";
 					// Sử dụng câu lệnh có tham số để tránh SQL Injection
 
 					using (SqlCommand sqlCommand = new SqlCommand(query, conn))
