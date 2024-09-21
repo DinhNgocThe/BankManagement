@@ -81,7 +81,7 @@
 			this.btnMinimizeLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
 			this.btnMinimizeLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
 			this.btnMinimizeLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnMinimizeLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(134)))), ((int)(((byte)(102)))));
+			this.btnMinimizeLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(96)))), ((int)(((byte)(70)))));
 			this.btnMinimizeLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.btnMinimizeLogin.ForeColor = System.Drawing.Color.White;
 			this.btnMinimizeLogin.Image = global::BankManagement.Properties.Resources.minimize;
@@ -98,7 +98,7 @@
 			this.btnCloseLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
 			this.btnCloseLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
 			this.btnCloseLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnCloseLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(134)))), ((int)(((byte)(102)))));
+			this.btnCloseLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(96)))), ((int)(((byte)(70)))));
 			this.btnCloseLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.btnCloseLogin.ForeColor = System.Drawing.Color.White;
 			this.btnCloseLogin.Image = global::BankManagement.Properties.Resources.close;
@@ -293,7 +293,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(134)))), ((int)(((byte)(102)))));
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(96)))), ((int)(((byte)(70)))));
 			this.ClientSize = new System.Drawing.Size(900, 569);
 			this.Controls.Add(this.guna2Button1);
 			this.Controls.Add(this.lblWarningLogin);

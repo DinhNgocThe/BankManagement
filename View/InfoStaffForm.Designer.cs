@@ -121,7 +121,7 @@
 			this.lbUserNameInfoStaffForm.AutoSize = true;
 			this.lbUserNameInfoStaffForm.Font = new System.Drawing.Font("Bahnschrift SemiBold", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbUserNameInfoStaffForm.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-			this.lbUserNameInfoStaffForm.Location = new System.Drawing.Point(77, 47);
+			this.lbUserNameInfoStaffForm.Location = new System.Drawing.Point(72, 47);
 			this.lbUserNameInfoStaffForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.lbUserNameInfoStaffForm.Name = "lbUserNameInfoStaffForm";
 			this.lbUserNameInfoStaffForm.Size = new System.Drawing.Size(64, 12);
@@ -135,7 +135,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.lbStaffNameInfoStaffForm.AutoSize = true;
 			this.lbStaffNameInfoStaffForm.Font = new System.Drawing.Font("Bahnschrift SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbStaffNameInfoStaffForm.Location = new System.Drawing.Point(75, 25);
+			this.lbStaffNameInfoStaffForm.Location = new System.Drawing.Point(70, 25);
 			this.lbStaffNameInfoStaffForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.lbStaffNameInfoStaffForm.Name = "lbStaffNameInfoStaffForm";
 			this.lbStaffNameInfoStaffForm.Size = new System.Drawing.Size(108, 18);
@@ -148,7 +148,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.imgStaffAvatarInfoStaffForm.Image = global::BankManagement.Properties.Resources.staff_woman;
-			this.imgStaffAvatarInfoStaffForm.Location = new System.Drawing.Point(19, 15);
+			this.imgStaffAvatarInfoStaffForm.Location = new System.Drawing.Point(14, 15);
 			this.imgStaffAvatarInfoStaffForm.Margin = new System.Windows.Forms.Padding(2);
 			this.imgStaffAvatarInfoStaffForm.Name = "imgStaffAvatarInfoStaffForm";
 			this.imgStaffAvatarInfoStaffForm.Size = new System.Drawing.Size(56, 49);

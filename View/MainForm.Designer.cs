@@ -106,7 +106,7 @@
 			this.btnStaffAvatarMain.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			this.btnStaffAvatarMain.ImageOffset = new System.Drawing.Point(-7, 0);
 			this.btnStaffAvatarMain.ImageSize = new System.Drawing.Size(39, 38);
-			this.btnStaffAvatarMain.Location = new System.Drawing.Point(862, 1);
+			this.btnStaffAvatarMain.Location = new System.Drawing.Point(849, 1);
 			this.btnStaffAvatarMain.Name = "btnStaffAvatarMain";
 			this.btnStaffAvatarMain.Size = new System.Drawing.Size(45, 45);
 			this.btnStaffAvatarMain.TabIndex = 2;
@@ -173,7 +173,7 @@
 			this.lbStaffName.AutoSize = true;
 			this.lbStaffName.Font = new System.Drawing.Font("Bahnschrift SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbStaffName.ForeColor = System.Drawing.Color.White;
-			this.lbStaffName.Location = new System.Drawing.Point(910, 16);
+			this.lbStaffName.Location = new System.Drawing.Point(896, 16);
 			this.lbStaffName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.lbStaffName.Name = "lbStaffName";
 			this.lbStaffName.Size = new System.Drawing.Size(105, 17);
@@ -351,7 +351,7 @@
 			this.btnCustomer.TextOffset = new System.Drawing.Point(0, -2);
 			this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
 			// 
-			// Main
+			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -363,7 +363,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Margin = new System.Windows.Forms.Padding(2);
 			this.MinimumSize = new System.Drawing.Size(1200, 700);
-			this.Name = "Main";
+			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Main";
 			this.Load += new System.EventHandler(this.Main_Load);

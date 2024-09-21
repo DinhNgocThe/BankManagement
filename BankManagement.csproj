@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="ViewModel\InfoStaffViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="View\CustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>

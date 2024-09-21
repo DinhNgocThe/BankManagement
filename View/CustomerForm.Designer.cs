@@ -28,9 +28,9 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtCustomerIDCustomerForm = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label2 = new System.Windows.Forms.Label();
@@ -94,7 +94,7 @@
 			this.txtCustomerIDCustomerForm.PlaceholderText = "";
 			this.txtCustomerIDCustomerForm.SelectedText = "";
 			this.txtCustomerIDCustomerForm.Size = new System.Drawing.Size(120, 35);
-			this.txtCustomerIDCustomerForm.TabIndex = 2;
+			this.txtCustomerIDCustomerForm.TabIndex = 1;
 			// 
 			// label2
 			// 
@@ -153,7 +153,7 @@
 			this.txtCustomerNameCustomerForm.PlaceholderText = "";
 			this.txtCustomerNameCustomerForm.SelectedText = "";
 			this.txtCustomerNameCustomerForm.Size = new System.Drawing.Size(200, 35);
-			this.txtCustomerNameCustomerForm.TabIndex = 4;
+			this.txtCustomerNameCustomerForm.TabIndex = 3;
 			// 
 			// label5
 			// 
@@ -189,7 +189,7 @@
 			this.txtCCCDCustomerFOrm.PlaceholderText = "";
 			this.txtCCCDCustomerFOrm.SelectedText = "";
 			this.txtCCCDCustomerFOrm.Size = new System.Drawing.Size(200, 35);
-			this.txtCCCDCustomerFOrm.TabIndex = 3;
+			this.txtCCCDCustomerFOrm.TabIndex = 2;
 			// 
 			// txtSearchCustomerForm
 			// 
@@ -266,7 +266,7 @@
 			this.txtPhoneNumberCustomerForm.PlaceholderText = "";
 			this.txtPhoneNumberCustomerForm.SelectedText = "";
 			this.txtPhoneNumberCustomerForm.Size = new System.Drawing.Size(143, 35);
-			this.txtPhoneNumberCustomerForm.TabIndex = 5;
+			this.txtPhoneNumberCustomerForm.TabIndex = 4;
 			// 
 			// label7
 			// 
@@ -302,7 +302,7 @@
 			this.txtEmailCustomerForm.PlaceholderText = "";
 			this.txtEmailCustomerForm.SelectedText = "";
 			this.txtEmailCustomerForm.Size = new System.Drawing.Size(295, 35);
-			this.txtEmailCustomerForm.TabIndex = 6;
+			this.txtEmailCustomerForm.TabIndex = 9;
 			// 
 			// label8
 			// 
@@ -338,37 +338,37 @@
 			this.txtAddressCustomerForm.PlaceholderText = "";
 			this.txtAddressCustomerForm.SelectedText = "";
 			this.txtAddressCustomerForm.Size = new System.Drawing.Size(295, 35);
-			this.txtAddressCustomerForm.TabIndex = 7;
+			this.txtAddressCustomerForm.TabIndex = 6;
 			// 
 			// DataGridViewCustomerForm
 			// 
-			dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-			this.DataGridViewCustomerForm.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+			this.DataGridViewCustomerForm.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
 			this.DataGridViewCustomerForm.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.DataGridViewCustomerForm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.DataGridViewCustomerForm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
 			this.DataGridViewCustomerForm.ColumnHeadersHeight = 4;
 			this.DataGridViewCustomerForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.DataGridViewCustomerForm.DefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.DataGridViewCustomerForm.DefaultCellStyle = dataGridViewCellStyle6;
 			this.DataGridViewCustomerForm.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.DataGridViewCustomerForm.Location = new System.Drawing.Point(50, 419);
 			this.DataGridViewCustomerForm.Name = "DataGridViewCustomerForm";
 			this.DataGridViewCustomerForm.RowHeadersVisible = false;
 			this.DataGridViewCustomerForm.Size = new System.Drawing.Size(935, 421);
-			this.DataGridViewCustomerForm.TabIndex = 8;
+			this.DataGridViewCustomerForm.TabIndex = 14;
 			this.DataGridViewCustomerForm.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
 			this.DataGridViewCustomerForm.ThemeStyle.AlternatingRowsStyle.Font = null;
 			this.DataGridViewCustomerForm.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -404,7 +404,7 @@
 			this.btnAddCustomerForm.Location = new System.Drawing.Point(690, 361);
 			this.btnAddCustomerForm.Name = "btnAddCustomerForm";
 			this.btnAddCustomerForm.Size = new System.Drawing.Size(81, 35);
-			this.btnAddCustomerForm.TabIndex = 1;
+			this.btnAddCustomerForm.TabIndex = 11;
 			this.btnAddCustomerForm.Text = "Add";
 			// 
 			// btnUpdateCustomerForm
@@ -420,7 +420,7 @@
 			this.btnUpdateCustomerForm.Location = new System.Drawing.Point(798, 361);
 			this.btnUpdateCustomerForm.Name = "btnUpdateCustomerForm";
 			this.btnUpdateCustomerForm.Size = new System.Drawing.Size(81, 35);
-			this.btnUpdateCustomerForm.TabIndex = 1;
+			this.btnUpdateCustomerForm.TabIndex = 12;
 			this.btnUpdateCustomerForm.Text = "Update";
 			// 
 			// btnDeleteCustomerForm
@@ -436,7 +436,7 @@
 			this.btnDeleteCustomerForm.Location = new System.Drawing.Point(906, 361);
 			this.btnDeleteCustomerForm.Name = "btnDeleteCustomerForm";
 			this.btnDeleteCustomerForm.Size = new System.Drawing.Size(81, 35);
-			this.btnDeleteCustomerForm.TabIndex = 1;
+			this.btnDeleteCustomerForm.TabIndex = 13;
 			this.btnDeleteCustomerForm.Text = "Delete";
 			// 
 			// label9
@@ -473,7 +473,7 @@
 			this.guna2TextBox1.PlaceholderText = "";
 			this.guna2TextBox1.SelectedText = "";
 			this.guna2TextBox1.Size = new System.Drawing.Size(143, 35);
-			this.guna2TextBox1.TabIndex = 5;
+			this.guna2TextBox1.TabIndex = 7;
 			// 
 			// label10
 			// 
@@ -509,7 +509,7 @@
 			this.guna2TextBox2.PlaceholderText = "";
 			this.guna2TextBox2.SelectedText = "";
 			this.guna2TextBox2.Size = new System.Drawing.Size(143, 35);
-			this.guna2TextBox2.TabIndex = 6;
+			this.guna2TextBox2.TabIndex = 5;
 			// 
 			// label11
 			// 
@@ -545,7 +545,7 @@
 			this.guna2TextBox3.PlaceholderText = "";
 			this.guna2TextBox3.SelectedText = "";
 			this.guna2TextBox3.Size = new System.Drawing.Size(143, 35);
-			this.guna2TextBox3.TabIndex = 5;
+			this.guna2TextBox3.TabIndex = 8;
 			// 
 			// CustomerForm
 			// 

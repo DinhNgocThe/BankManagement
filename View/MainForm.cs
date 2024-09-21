@@ -1,8 +1,10 @@
-﻿using System;
+﻿using BankManagement.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -15,12 +17,14 @@ namespace BankManagement
     public partial class MainForm : Form
     {
 		private int staffId;
+		private MainViewModel viewModel;
         public MainForm(int staffId)
         {
             InitializeComponent();
             this.Load += Main_Load;
 
 			this.staffId = staffId;//Nhận dữ liệu từ LoginForm
+			viewModel = new MainViewModel();
 		}
 		private void Main_Load(object sender, EventArgs e)
 		{
@@ -32,8 +36,33 @@ namespace BankManagement
 			btnStaffAvatarMain.HoverState.FillColor = Color.FromArgb(200, 200, 200);
 			btnNotifyMain.HoverState.FillColor = Color.FromArgb(100, 100, 100);
 
-			// Gọi trực tiếp phương thức xử lý sự kiện Click của btnCustomer
+			// Gọi trực tiếp phương thức xử lý sự kiện Click của btnCustomer để mặc địch form CustomerForm được mở khi load MainForm
 			btnCustomer_Click(this, EventArgs.Empty);
+
+
+			//Cập nhật data binding
+			viewModel.LoadStaff(staffId);
+			lbStaffName.Text = viewModel.GetStaffName();
+			// Cập nhật ảnh của PictureBox từ file
+			try
+			{
+				// Lấy đường dẫn ảnh từ viewModel
+				string photoPath = viewModel.GetPhotoPath();
+
+
+				if (File.Exists(photoPath))
+				{
+					btnStaffAvatarMain.Image = Bitmap.FromFile(photoPath);
+				}
+				else
+				{
+					MessageBox.Show("Không tìm thấy file ảnh.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Có lỗi khi tải ảnh: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
 		}
 
 
