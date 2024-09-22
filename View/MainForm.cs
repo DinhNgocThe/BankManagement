@@ -150,9 +150,9 @@ namespace BankManagement
 		private void btnCustomer_Click(object sender, EventArgs e)
 		{
 			btnCustomer.FillColor = Color.FromArgb(15, 149, 123); //Đổi màu khi click, set màu các btn khác về ban đầu
-			btnAccount.FillColor = Color.FromArgb(60, 61, 55);
-			btnTransaction.FillColor = Color.FromArgb(60, 61, 55);
-			btnLoan.FillColor = Color.FromArgb(60, 61, 55);
+			btnAccount.FillColor = Color.FromArgb(49, 51, 56);
+			btnTransaction.FillColor = Color.FromArgb(49, 51, 56);
+			btnLoan.FillColor = Color.FromArgb(49, 51, 56);
 
 			//Begin - mở form CustomerForm
 			if (customerForm == null || customerForm.IsDisposed) // Kiểm tra nếu form chưa được khởi tạo hoặc đã bị đóng
@@ -177,10 +177,10 @@ namespace BankManagement
 		//Sự kiện click btnAccount
 		private void btnAccount_Click(object sender, EventArgs e)
         {
-			btnCustomer.FillColor = Color.FromArgb(60, 61, 55); 
+			btnCustomer.FillColor = Color.FromArgb(49, 51, 56); 
 			btnAccount.FillColor = Color.FromArgb(15, 149, 123); //Đổi màu khi click, set màu các btn khác về ban đầu
-			btnTransaction.FillColor = Color.FromArgb(60, 61, 55);
-			btnLoan.FillColor = Color.FromArgb(60, 61, 55);
+			btnTransaction.FillColor = Color.FromArgb(49, 51, 56);
+			btnLoan.FillColor = Color.FromArgb(49, 51, 56);
 
 			//Đóng các form khác
 			customerForm.Close();
@@ -191,10 +191,10 @@ namespace BankManagement
 		//Sự kiện click btnTransaction
         private void btnTransaction_Click(object sender, EventArgs e)
         {
-			btnCustomer.FillColor = Color.FromArgb(60, 61, 55);
-			btnAccount.FillColor = Color.FromArgb(60, 61, 55); 
+			btnCustomer.FillColor = Color.FromArgb(49, 51, 56);
+			btnAccount.FillColor = Color.FromArgb(49, 51, 56); 
 			btnTransaction.FillColor = Color.FromArgb(15, 149, 123); //Đổi màu khi click, set màu các btn khác về ban đầu
-			btnLoan.FillColor = Color.FromArgb(60, 61, 55);
+			btnLoan.FillColor = Color.FromArgb(49, 51, 56);
 
 			//Đóng các form khác
 			customerForm.Close();
@@ -205,9 +205,9 @@ namespace BankManagement
 		//Sự kiện click btn Loan
         private void btnLoan_Click(object sender, EventArgs e)
         {
-			btnCustomer.FillColor = Color.FromArgb(60, 61, 55);
-			btnAccount.FillColor = Color.FromArgb(60, 61, 55);
-			btnTransaction.FillColor = Color.FromArgb(60, 61, 55); 
+			btnCustomer.FillColor = Color.FromArgb(49, 51, 56);
+			btnAccount.FillColor = Color.FromArgb(49, 51, 56);
+			btnTransaction.FillColor = Color.FromArgb(49, 51, 56); 
 			btnLoan.FillColor = Color.FromArgb(15, 149, 123); //Đổi màu khi click, set màu các btn khác về ban đầu
 
 			//Đóng các form khác

@@ -46,6 +46,7 @@
 			this.btnTransaction = new Guna.UI2.WinForms.Guna2Button();
 			this.btnAccount = new Guna.UI2.WinForms.Guna2Button();
 			this.btnCustomer = new Guna.UI2.WinForms.Guna2Button();
+			this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
 			this.panelTitleBarMain.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.imgLogoMain)).BeginInit();
 			this.panelLeftBarMain.SuspendLayout();
@@ -53,7 +54,7 @@
 			// 
 			// panelTitleBarMain
 			// 
-			this.panelTitleBarMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+			this.panelTitleBarMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
 			this.panelTitleBarMain.Controls.Add(this.btnNotifyMain);
 			this.panelTitleBarMain.Controls.Add(this.btnStaffAvatarMain);
 			this.panelTitleBarMain.Controls.Add(this.btnMinimizeMain);
@@ -116,11 +117,12 @@
 			// 
 			this.btnMinimizeMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnMinimizeMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.btnMinimizeMain.BorderColor = System.Drawing.Color.Transparent;
 			this.btnMinimizeMain.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
 			this.btnMinimizeMain.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
 			this.btnMinimizeMain.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
 			this.btnMinimizeMain.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnMinimizeMain.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+			this.btnMinimizeMain.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
 			this.btnMinimizeMain.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.btnMinimizeMain.ForeColor = System.Drawing.Color.White;
 			this.btnMinimizeMain.Image = global::BankManagement.Properties.Resources.minimize;
@@ -138,7 +140,7 @@
 			this.btnMaximizeMain.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
 			this.btnMaximizeMain.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
 			this.btnMaximizeMain.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnMaximizeMain.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+			this.btnMaximizeMain.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
 			this.btnMaximizeMain.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.btnMaximizeMain.ForeColor = System.Drawing.Color.White;
 			this.btnMaximizeMain.Image = global::BankManagement.Properties.Resources.maximize;
@@ -156,7 +158,7 @@
 			this.btnCloseMain.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
 			this.btnCloseMain.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
 			this.btnCloseMain.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnCloseMain.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+			this.btnCloseMain.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
 			this.btnCloseMain.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.btnCloseMain.ForeColor = System.Drawing.Color.White;
 			this.btnCloseMain.Image = global::BankManagement.Properties.Resources.close;
@@ -209,7 +211,7 @@
 			// 
 			// panelLeftBarMain
 			// 
-			this.panelLeftBarMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+			this.panelLeftBarMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
 			this.panelLeftBarMain.Controls.Add(this.lbLine);
 			this.panelLeftBarMain.Controls.Add(this.btnSetting);
 			this.panelLeftBarMain.Controls.Add(this.btnLoan);
@@ -228,7 +230,7 @@
 			this.lbLine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.lbLine.Font = new System.Drawing.Font("Bodoni MT Condensed", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbLine.ForeColor = System.Drawing.Color.Gray;
-			this.lbLine.Location = new System.Drawing.Point(31, 554);
+			this.lbLine.Location = new System.Drawing.Point(31, 553);
 			this.lbLine.Name = "lbLine";
 			this.lbLine.Size = new System.Drawing.Size(100, 13);
 			this.lbLine.TabIndex = 2;
@@ -244,7 +246,7 @@
 			this.btnSetting.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
 			this.btnSetting.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
 			this.btnSetting.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnSetting.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+			this.btnSetting.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(34)))));
 			this.btnSetting.Font = new System.Drawing.Font("Bahnschrift SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnSetting.ForeColor = System.Drawing.Color.White;
 			this.btnSetting.Image = global::BankManagement.Properties.Resources.setting;
@@ -267,7 +269,7 @@
 			this.btnLoan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
 			this.btnLoan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
 			this.btnLoan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnLoan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(61)))), ((int)(((byte)(55)))));
+			this.btnLoan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
 			this.btnLoan.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnLoan.ForeColor = System.Drawing.Color.White;
 			this.btnLoan.Image = global::BankManagement.Properties.Resources.loan;
@@ -290,7 +292,7 @@
 			this.btnTransaction.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
 			this.btnTransaction.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
 			this.btnTransaction.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnTransaction.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(61)))), ((int)(((byte)(55)))));
+			this.btnTransaction.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
 			this.btnTransaction.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnTransaction.ForeColor = System.Drawing.Color.White;
 			this.btnTransaction.Image = global::BankManagement.Properties.Resources.transaction;
@@ -313,7 +315,7 @@
 			this.btnAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
 			this.btnAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
 			this.btnAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(61)))), ((int)(((byte)(55)))));
+			this.btnAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
 			this.btnAccount.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnAccount.ForeColor = System.Drawing.Color.White;
 			this.btnAccount.Image = global::BankManagement.Properties.Resources.account1;
@@ -337,7 +339,7 @@
 			this.btnCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
 			this.btnCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
 			this.btnCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnCustomer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(61)))), ((int)(((byte)(55)))));
+			this.btnCustomer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
 			this.btnCustomer.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnCustomer.ForeColor = System.Drawing.Color.White;
 			this.btnCustomer.Image = global::BankManagement.Properties.Resources.customer;
@@ -351,11 +353,25 @@
 			this.btnCustomer.TextOffset = new System.Drawing.Point(0, -2);
 			this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
 			// 
+			// guna2ContextMenuStrip1
+			// 
+			this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+			this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+			this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+			this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+			this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+			this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+			this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+			this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+			this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
 			this.ClientSize = new System.Drawing.Size(1200, 700);
 			this.Controls.Add(this.panelLeftBarMain);
 			this.Controls.Add(this.panelTitleBarMain);
@@ -396,5 +412,6 @@
         private Guna.UI2.WinForms.Guna2Button btnStaffAvatarMain;
         private Guna.UI2.WinForms.Guna2Button btnNotifyMain;
 		private System.Windows.Forms.Label lbLine;
+		private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
 	}
 }
