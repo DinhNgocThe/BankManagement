@@ -53,12 +53,12 @@
             // lblUTCBank
             // 
             this.lblUTCBank.AutoSize = true;
-            this.lblUTCBank.Font = new System.Drawing.Font("Baloo", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUTCBank.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUTCBank.ForeColor = System.Drawing.Color.White;
             this.lblUTCBank.Location = new System.Drawing.Point(98, 46);
             this.lblUTCBank.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUTCBank.Name = "lblUTCBank";
-            this.lblUTCBank.Size = new System.Drawing.Size(104, 33);
+            this.lblUTCBank.Size = new System.Drawing.Size(103, 24);
             this.lblUTCBank.TabIndex = 2;
             this.lblUTCBank.Text = "UTC Bank";
             // 

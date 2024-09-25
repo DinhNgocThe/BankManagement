@@ -28,9 +28,10 @@ namespace BankManagement
 		{
 			cbGenderCustomerForm.Items.Add("Male");
 			cbGenderCustomerForm.Items.Add("Female");
+			imgCustomerCustomerForm.Image = null;
 
-			//Đăng ký sự kiện ScrollBar vertical
-			dataGridViewCustomerInforCustomerForm.MouseWheel += dataGridViewCustomerInforCustomerForm_MouseWheel;
+            //Đăng ký sự kiện ScrollBar vertical
+            dataGridViewCustomerInforCustomerForm.MouseWheel += dataGridViewCustomerInforCustomerForm_MouseWheel;
 		}
 
         private void cbGenderCustomerForm_Paint(object sender, PaintEventArgs e)
