@@ -1,5 +1,6 @@
 ﻿using BankManagement.Model;
 using BankManagement.ViewModel;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,31 +26,24 @@ namespace BankManagement
 
 		private void CustomerForm_Load(object sender, EventArgs e)
 		{
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("356254", "024204007331", "DINH NGOC THE", "0385689273", "07/01/2005", "Quy Son, Luc Ngan, Bac Giang", "chiu luon");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("458652", "063521458965", "LUONG VAN SON", "0865236587", "01/01/2004", "Quy Son, Luc Ngan, Bac Giang");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("505944", "003568998541", "TRUONG QUANG VINH", "0968574586", "23/11/2004", "Kim Son, Hong Giang, Thanh Hoa");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("356254", "024204007331", "DINH NGOC THE", "0385689273", "07/01/2005", "Quy Son, Luc Ngan, Bac Giang");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("458652", "063521458965", "LUONG VAN SON", "0865236587", "01/01/2004", "Quy Son, Luc Ngan, Bac Giang");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("505944", "003568998541", "TRUONG QUANG VINH", "0968574586", "23/11/2004", "Kim Son, Hong Giang, Thanh Hoa");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("356254", "024204007331", "DINH NGOC THE", "0385689273", "07/01/2005", "Quy Son, Luc Ngan, Bac Giang");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("458652", "063521458965", "LUONG VAN SON", "0865236587", "01/01/2004", "Quy Son, Luc Ngan, Bac Giang");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("505944", "003568998541", "TRUONG QUANG VINH", "0968574586", "23/11/2004", "Kim Son, Hong Giang, Thanh Hoa");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("356254", "024204007331", "DINH NGOC THE", "0385689273", "07/01/2005", "Quy Son, Luc Ngan, Bac Giang");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("458652", "063521458965", "LUONG VAN SON", "0865236587", "01/01/2004", "Quy Son, Luc Ngan, Bac Giang");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("505944", "003568998541", "TRUONG QUANG VINH", "0968574586", "23/11/2004", "Kim Son, Hong Giang, Thanh Hoa");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("356254", "024204007331", "DINH NGOC THE", "0385689273", "07/01/2005", "Quy Son, Luc Ngan, Bac Giang");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("458652", "063521458965", "LUONG VAN SON", "0865236587", "01/01/2004", "Quy Son, Luc Ngan, Bac Giang");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("505944", "003568998541", "TRUONG QUANG VINH", "0968574586", "23/11/2004", "Kim Son, Hong Giang, Thanh Hoa");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("356254", "024204007331", "DINH NGOC THE", "0385689273", "07/01/2005", "Quy Son, Luc Ngan, Bac Giang");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("458652", "063521458965", "LUONG VAN SON", "0865236587", "01/01/2004", "Quy Son, Luc Ngan, Bac Giang");
-			//dataGridViewCustomerInforCustomerForm.Rows.Add("505944", "003568998541", "TRUONG QUANG VINH", "0968574586", "23/11/2004", "Kim Son, Hong Giang, Thanh Hoa");
+			cbGenderCustomerForm.Items.Add("Male");
+			cbGenderCustomerForm.Items.Add("Female");
 
 			//Đăng ký sự kiện ScrollBar vertical
 			dataGridViewCustomerInforCustomerForm.MouseWheel += dataGridViewCustomerInforCustomerForm_MouseWheel;
 		}
 
-		//Sự kiện sử dụng con lăn chuột để kéo dataGridView
-		private void dataGridViewCustomerInforCustomerForm_MouseWheel(object sender, MouseEventArgs e)
+        private void cbGenderCustomerForm_Paint(object sender, PaintEventArgs e)
+        {
+            // Lấy kích thước của ComboBox
+            Rectangle rect = new Rectangle(0, 0, cbGenderCustomerForm.Width, cbGenderCustomerForm.Height);
+
+            // Tùy chỉnh vẽ viền
+            e.Graphics.DrawRectangle(new Pen(Color.Red, 2), rect);
+        }
+
+        //Sự kiện sử dụng con lăn chuột để kéo dataGridView
+        private void dataGridViewCustomerInforCustomerForm_MouseWheel(object sender, MouseEventArgs e)
 		{
 			if (e.Delta > 0)
 			{
@@ -111,32 +105,30 @@ namespace BankManagement
             // Kiểm tra xem chỉ số hàng hợp lệ
             if (e.RowIndex >= 0)
             {
-                //// Lấy hàng được chọn
-                //DataGridViewRow selectedRow = dataGridViewCustomerInforCustomerForm.Rows[e.RowIndex];
+                // Lấy hàng được chọn
+                DataGridViewRow selectedRow = dataGridViewCustomerInforCustomerForm.Rows[e.RowIndex];
 
-                //// Lấy dữ liệu từ các cột trong hàng với kiểm tra null
-                //int id = selectedRow.Cells["ID"].Value != DBNull.Value ? Convert.ToInt32(selectedRow.Cells["ID"].Value) : 0;
-                //string cccd = selectedRow.Cells["CCCD"].Value?.ToString() ?? string.Empty;
-                //string name = selectedRow.Cells["Customer Name"].Value?.ToString() ?? string.Empty;
-                //string phone_number = selectedRow.Cells["Phone Number"].Value?.ToString() ?? string.Empty;
-                //string dateOfBirth = selectedRow.Cells["Date of Birth"].Value?.ToString() ?? string.Empty;
-                //string address = selectedRow.Cells["Address"].Value?.ToString() ?? string.Empty;
-                //string nationality = selectedRow.Cells["Nationality"].Value?.ToString() ?? string.Empty;
-                //string job = selectedRow.Cells["Job"].Value?.ToString() ?? string.Empty;
-                //string email = selectedRow.Cells["Email"].Value?.ToString() ?? string.Empty;
+                // Lấy dữ liệu từ các cột trong hàng với kiểm tra null
+                int id = Convert.ToInt32(selectedRow.Cells["id"].Value);
+				string cccd = selectedRow.Cells["cccd"].Value.ToString();
+				string name = selectedRow.Cells["customerName"].Value.ToString();
+				string phone_number = selectedRow.Cells["phoneNumber"].Value.ToString();
+				string dateOfBirth = selectedRow.Cells["dateOfBirth"].Value.ToString();
+				string address = selectedRow.Cells["address"].Value.ToString();
+				string nationality = selectedRow.Cells["nationality"].Value.ToString();
+				string job = selectedRow.Cells["job"].Value.ToString();
+				string email = selectedRow.Cells["email"].Value.ToString();
 
-                //// Hiển thị dữ liệu 
-                //txtCustomerIDCustomerForm.Text = id.ToString();
-                //txtCCCDCustomerForm.Text = cccd;
-                //txtCustomerNameCustomerForm.Text = name;
-                //txtPhoneNumberCustomerForm.Text = phone_number;
-                //txtDateOfBirthCustomerForm.Text = dateOfBirth;
-                //txtAddressCustomerForm.Text = address;
-                //txtNationalityCustomerForm.Text = nationality;
-                //txtJobCustomerForm.Text = job;
-                //txtEmailCustomerForm.Text = email;
+                // Hiển thị dữ liệu 
+                txtCCCDCustomerForm.Text = cccd;
+                txtCustomerNameCustomerForm.Text = name;
+                txtPhoneNumberCustomerForm.Text = phone_number;
+                txtDateOfBirthCustomerForm.Text = dateOfBirth;
+                txtAddressCustomerForm.Text = address;
+                txtNationalityCustomerForm.Text = nationality;
+                txtJobCustomerForm.Text = job;
+                txtEmailCustomerForm.Text = email;
             }
         }
-
     }
 }
