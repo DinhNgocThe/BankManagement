@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F102CF32-AE3F-4148-8D9B-ABC4F32862AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BankManagement</RootNamespace>
+    <AssemblyName>BankManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.23.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>packages\Oracle.ManagedDataAccess.23.6.1\lib\net472\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.6.0.1\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Formats.Asn1, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Formats.Asn1.8.0.1\lib\net462\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.8.0.5\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Language\LangHelper.cs" />
+    <Compile Include="Model\CustomerAccount.cs" />
+    <Compile Include="Model\CustomerAccountWithInforRepository.cs" />
+    <Compile Include="Model\CustomerInfor.cs" />
+    <Compile Include="Model\CustomerInforRepository.cs" />
+    <Compile Include="Model\FeedBack.cs" />
+    <Compile Include="Model\FeedBackReponsitory.cs" />
+    <Compile Include="Model\Loan.cs" />
+    <Compile Include="Model\LoanRepository.cs" />
+    <Compile Include="Model\Log.cs" />
+    <Compile Include="Model\LogRepository.cs" />
+    <Compile Include="Model\Notify.cs" />
+    <Compile Include="Model\NotifyReponsitory.cs" />
+    <Compile Include="Model\Transaction.cs" />
+    <Compile Include="Model\TransactionReponsitory.cs" />
+    <Compile Include="ViewModel\AccountViewModel.cs" />
+    <Compile Include="ViewModel\AddStaffViewModel.cs" />
+    <Compile Include="ViewModel\ChangePasswordViewModel.cs" />
+    <Compile Include="ViewModel\CreateNotificationViewModel.cs" />
+    <Compile Include="ViewModel\CustomerViewModel.cs" />
+    <Compile Include="ViewModel\FeedBackViewModel.cs" />
+    <Compile Include="ViewModel\InfoStaffViewModel.cs" />
+    <Compile Include="ViewModel\LoanViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\LogViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\NotifyViewModel.cs" />
+    <Compile Include="ViewModel\SettingViewModel.cs" />
+    <Compile Include="ViewModel\TransactionViewModel.cs" />
+    <Compile Include="View\AddStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddStaffForm.Designer.cs">
+      <DependentUpon>AddStaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\BillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BillForm.Designer.cs">
+      <DependentUpon>BillForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CreateNotificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CreateNotificationForm.Designer.cs">
+      <DependentUpon>CreateNotificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CustomerAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CustomerAccountForm.Designer.cs">
+      <DependentUpon>CustomerAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\GraphicsExtension.cs" />
+    <Compile Include="View\CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CustomMessageBox.Designer.cs">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DetailedNoticeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DetailedNoticeForm.Designer.cs">
+      <DependentUpon>DetailedNoticeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FeedbackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FeedbackForm.Designer.cs">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InfoStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InfoStaffForm.Designer.cs">
+      <DependentUpon>InfoStaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoanForm.Designer.cs">
+      <DependentUpon>LoanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LogForm.Designer.cs">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="getConnectionString.cs" />
+    <Compile Include="View\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Staff.cs" />
+    <Compile Include="Model\StaffRepository.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extensions\RoundControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Extensions\RoundControl.Designer.cs">
+      <DependentUpon>RoundControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NotifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\NotifyForm.Designer.cs">
+      <DependentUpon>NotifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TransactionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TransactionForm.Designer.cs">
+      <DependentUpon>TransactionForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Language\Strings.resx" />
+    <EmbeddedResource Include="Language\Strings.vi.resx" />
+    <EmbeddedResource Include="View\AddStaffForm.resx">
+      <DependentUpon>AddStaffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BillForm.resx">
+      <DependentUpon>BillForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CreateNotificationForm.resx">
+      <DependentUpon>CreateNotificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CustomerAccountForm.resx">
+      <DependentUpon>CustomerAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DetailedNoticeForm.resx">
+      <DependentUpon>DetailedNoticeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FeedbackForm.resx">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InfoStaffForm.resx">
+      <DependentUpon>InfoStaffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoanForm.resx">
+      <DependentUpon>LoanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LogForm.resx">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Extensions\RoundControl.resx">
+      <DependentUpon>RoundControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NotifyForm.resx">
+      <DependentUpon>NotifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TransactionForm.resx">
+      <DependentUpon>TransactionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Oracle.ManagedDataAccess.Client.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLogin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow.png" />
+    <None Include="Resources\united-kingdom.png" />
+    <None Include="Resources\vietnam.png" />
+    <None Include="Resources\success_icon.png" />
+    <None Include="Resources\warning_icon.png" />
+    <None Include="Resources\process.png" />
+    <None Include="Resources\within_term.png" />
+    <None Include="Resources\more_v.png" />
+    <None Include="Resources\more.png" />
+    <None Include="Resources\star_yellow.png" />
+    <None Include="Resources\star_white.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\x-button.png" />
+    <None Include="Resources\update-user1.png" />
+    <None Include="Resources\update-user.png" />
+    <None Include="Resources\trash-bin.png" />
+    <None Include="Resources\staff_woman.png" />
+    <None Include="Resources\setting.png" />
+    <None Include="Resources\transaction.png" />
+    <None Include="Resources\account.png" />
+    <None Include="Resources\customer.png" />
+    <None Include="Resources\account1.png" />
+    <None Include="Resources\loan.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Image\StaffImage\staff_woman.png" />
+    <None Include="Image\StaffImage\staff_man.png" />
+    <None Include="Resources\bell_icon.png" />
+    <None Include="Resources\backgroun_login.png" />
+    <None Include="Resources\avatar_login_man.png" />
+    <None Include="Resources\img_maximize.png" />
+    <None Include="Resources\letter-x.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\img_help1.png" />
+    <None Include="Resources\feedback.png" />
+    <None Include="Resources\img_feedback.png" />
+    <None Include="Resources\img_btn_feedback.png" />
+    <None Include="Resources\active.png" />
+    <None Include="Resources\inactive.png" />
+    <None Include="Resources\avatar_default.png" />
+    <None Include="Resources\img_customer_default.png" />
+    <None Include="Resources\checked.png" />
+    <None Include="Resources\add-user.png" />
+    <None Include="Resources\customer_background.png" />
+    <None Include="Resources\img_search.png" />
+    <None Include="Resources\employee.png" />
+    <None Include="Resources\img_reset.png" />
+    <None Include="Resources\avatar_customer_default.png" />
+    <None Include="Resources\img_background_bill.png" />
+    <None Include="Resources\img_export_pdf.png" />
+    <None Include="Resources\img_background_bill01.png" />
+    <None Include="Resources\log.png" />
+    <None Include="Resources\left-chevron.png" />
+    <None Include="Resources\img_panel_profile.jpg" />
+    <None Include="Resources\img_setting.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\img_btn_add_staff.png" />
+    <None Include="Resources\img_btn_create_notification.png" />
+    <Content Include="Resources\maximize.png" />
+    <None Include="Resources\notification_bell.png" />
+    <None Include="Resources\staff.png" />
+    <None Include="Resources\maximize1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Image\CustomerImage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

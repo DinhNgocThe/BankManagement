@@ -1,0 +1,361 @@
+﻿namespace BankManagement
+{
+    partial class LoginForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
+            this.lblUTCBank = new System.Windows.Forms.Label();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.btnMinimizeLogin = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCloseLogin = new Guna.UI2.WinForms.Guna2Button();
+            this.lbAdminLogin = new System.Windows.Forms.Label();
+            this.lbUserName = new System.Windows.Forms.Label();
+            this.lbPassword = new System.Windows.Forms.Label();
+            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnLogin = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblWarningLogin = new System.Windows.Forms.Label();
+            this.imgLoginForm = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgLogo = new System.Windows.Forms.PictureBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.roundControl1 = new BankManagement.RoundControl();
+            this.panelTitleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLoginForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lblUTCBank
+            // 
+            this.lblUTCBank.AutoSize = true;
+            this.lblUTCBank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(43)))));
+            this.lblUTCBank.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUTCBank.ForeColor = System.Drawing.Color.White;
+            this.lblUTCBank.Location = new System.Drawing.Point(104, 42);
+            this.lblUTCBank.Name = "lblUTCBank";
+            this.lblUTCBank.Size = new System.Drawing.Size(112, 29);
+            this.lblUTCBank.TabIndex = 2;
+            this.lblUTCBank.Text = "Utcbank";
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.Transparent;
+            this.panelTitleBar.Controls.Add(this.btnMinimizeLogin);
+            this.panelTitleBar.Controls.Add(this.btnCloseLogin);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(1200, 42);
+            this.panelTitleBar.TabIndex = 3;
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelTitleBarLogin_MouseDown);
+            // 
+            // btnMinimizeLogin
+            // 
+            this.btnMinimizeLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMinimizeLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMinimizeLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMinimizeLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMinimizeLogin.FillColor = System.Drawing.Color.Transparent;
+            this.btnMinimizeLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMinimizeLogin.ForeColor = System.Drawing.Color.White;
+            this.btnMinimizeLogin.Image = global::BankManagement.Properties.Resources.minimize;
+            this.btnMinimizeLogin.ImageSize = new System.Drawing.Size(16, 4);
+            this.btnMinimizeLogin.Location = new System.Drawing.Point(1109, 1);
+            this.btnMinimizeLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMinimizeLogin.Name = "btnMinimizeLogin";
+            this.btnMinimizeLogin.Size = new System.Drawing.Size(43, 39);
+            this.btnMinimizeLogin.TabIndex = 11;
+            this.btnMinimizeLogin.Click += new System.EventHandler(this.btnLoginMinimize_Click);
+            // 
+            // btnCloseLogin
+            // 
+            this.btnCloseLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCloseLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCloseLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCloseLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCloseLogin.FillColor = System.Drawing.Color.Transparent;
+            this.btnCloseLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCloseLogin.ForeColor = System.Drawing.Color.White;
+            this.btnCloseLogin.Image = global::BankManagement.Properties.Resources.close;
+            this.btnCloseLogin.ImageSize = new System.Drawing.Size(12, 12);
+            this.btnCloseLogin.Location = new System.Drawing.Point(1157, 1);
+            this.btnCloseLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCloseLogin.Name = "btnCloseLogin";
+            this.btnCloseLogin.Size = new System.Drawing.Size(43, 39);
+            this.btnCloseLogin.TabIndex = 11;
+            this.btnCloseLogin.Click += new System.EventHandler(this.btnLoginClose_Click);
+            // 
+            // lbAdminLogin
+            // 
+            this.lbAdminLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbAdminLogin.AutoSize = true;
+            this.lbAdminLogin.BackColor = System.Drawing.Color.White;
+            this.lbAdminLogin.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAdminLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.lbAdminLogin.Location = new System.Drawing.Point(329, 239);
+            this.lbAdminLogin.Name = "lbAdminLogin";
+            this.lbAdminLogin.Size = new System.Drawing.Size(147, 29);
+            this.lbAdminLogin.TabIndex = 6;
+            this.lbAdminLogin.Text = "Admin Login";
+            // 
+            // lbUserName
+            // 
+            this.lbUserName.AutoSize = true;
+            this.lbUserName.BackColor = System.Drawing.Color.White;
+            this.lbUserName.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.lbUserName.Location = new System.Drawing.Point(277, 284);
+            this.lbUserName.Name = "lbUserName";
+            this.lbUserName.Size = new System.Drawing.Size(88, 21);
+            this.lbUserName.TabIndex = 6;
+            this.lbUserName.Text = "Username";
+            // 
+            // lbPassword
+            // 
+            this.lbPassword.AutoSize = true;
+            this.lbPassword.BackColor = System.Drawing.Color.White;
+            this.lbPassword.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.lbPassword.Location = new System.Drawing.Point(277, 370);
+            this.lbPassword.Name = "lbPassword";
+            this.lbPassword.Size = new System.Drawing.Size(86, 21);
+            this.lbPassword.TabIndex = 6;
+            this.lbPassword.Text = "Password";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.BackColor = System.Drawing.Color.White;
+            this.txtUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.txtUsername.BorderRadius = 5;
+            this.txtUsername.BorderThickness = 2;
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsername.DefaultText = "";
+            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
+            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Location = new System.Drawing.Point(277, 309);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PasswordChar = '\0';
+            this.txtUsername.PlaceholderText = "";
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.Size = new System.Drawing.Size(260, 46);
+            this.txtUsername.TabIndex = 0;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.White;
+            this.txtPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.txtPassword.BorderRadius = 5;
+            this.txtPassword.BorderThickness = 2;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
+            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.Location = new System.Drawing.Point(277, 395);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.PlaceholderText = "";
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.Size = new System.Drawing.Size(260, 46);
+            this.txtPassword.TabIndex = 1;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.White;
+            this.btnLogin.BorderRadius = 13;
+            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(8)))), ((int)(((byte)(103)))));
+            this.btnLogin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(207)))), ((int)(((byte)(208)))));
+            this.btnLogin.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(331, 476);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(153, 43);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.TextOffset = new System.Drawing.Point(1, -1);
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // lblWarningLogin
+            // 
+            this.lblWarningLogin.AutoSize = true;
+            this.lblWarningLogin.BackColor = System.Drawing.Color.White;
+            this.lblWarningLogin.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarningLogin.ForeColor = System.Drawing.Color.Red;
+            this.lblWarningLogin.Location = new System.Drawing.Point(357, 447);
+            this.lblWarningLogin.Name = "lblWarningLogin";
+            this.lblWarningLogin.Size = new System.Drawing.Size(0, 16);
+            this.lblWarningLogin.TabIndex = 9;
+            // 
+            // imgLoginForm
+            // 
+            this.imgLoginForm.BackColor = System.Drawing.Color.White;
+            this.imgLoginForm.Image = global::BankManagement.Properties.Resources.imgLogin;
+            this.imgLoginForm.Location = new System.Drawing.Point(603, 229);
+            this.imgLoginForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgLoginForm.Name = "imgLoginForm";
+            this.imgLoginForm.Size = new System.Drawing.Size(317, 241);
+            this.imgLoginForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgLoginForm.TabIndex = 7;
+            this.imgLoginForm.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::BankManagement.Properties.Resources.avatar_login_man;
+            this.pictureBox1.Location = new System.Drawing.Point(371, 167);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(73, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // imgLogo
+            // 
+            this.imgLogo.BackColor = System.Drawing.Color.Transparent;
+            this.imgLogo.Image = global::BankManagement.Properties.Resources.logo;
+            this.imgLogo.Location = new System.Drawing.Point(39, 28);
+            this.imgLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgLogo.Name = "imgLogo";
+            this.imgLogo.Size = new System.Drawing.Size(60, 55);
+            this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgLogo.TabIndex = 1;
+            this.imgLogo.TabStop = false;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(565, 32);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(0, 0);
+            this.guna2Button1.TabIndex = 10;
+            this.guna2Button1.Text = "guna2Button1";
+            // 
+            // roundControl1
+            // 
+            this.roundControl1.BackColor = System.Drawing.Color.Transparent;
+            this.roundControl1.BackgroundColor = System.Drawing.Color.White;
+            this.roundControl1.BorderColor = System.Drawing.SystemColors.Control;
+            this.roundControl1.BorderWidth = 1F;
+            this.roundControl1.Location = new System.Drawing.Point(200, 137);
+            this.roundControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundControl1.Name = "roundControl1";
+            this.roundControl1.Radius = 10;
+            this.roundControl1.Size = new System.Drawing.Size(800, 427);
+            this.roundControl1.TabIndex = 4;
+            // 
+            // LoginForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(96)))), ((int)(((byte)(70)))));
+            this.BackgroundImage = global::BankManagement.Properties.Resources.backgroun_login;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.lblWarningLogin);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.imgLoginForm);
+            this.Controls.Add(this.lbPassword);
+            this.Controls.Add(this.lbUserName);
+            this.Controls.Add(this.lbAdminLogin);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.roundControl1);
+            this.Controls.Add(this.lblUTCBank);
+            this.Controls.Add(this.imgLogo);
+            this.Controls.Add(this.panelTitleBar);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1200, 700);
+            this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
+            this.panelTitleBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgLoginForm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.PictureBox imgLogo;
+        private System.Windows.Forms.Label lblUTCBank;
+        private System.Windows.Forms.Panel panelTitleBar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbAdminLogin;
+        private System.Windows.Forms.PictureBox imgLoginForm;
+        private System.Windows.Forms.Label lbUserName;
+        private System.Windows.Forms.Label lbPassword;
+        private Guna.UI2.WinForms.Guna2TextBox txtUsername;
+        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
+        private Guna.UI2.WinForms.Guna2GradientButton btnLogin;
+        private System.Windows.Forms.Label lblWarningLogin;
+		private Guna.UI2.WinForms.Guna2Button guna2Button1;
+		private Guna.UI2.WinForms.Guna2Button btnCloseLogin;
+		private Guna.UI2.WinForms.Guna2Button btnMinimizeLogin;
+		private RoundControl roundControl1;
+    }
+}
+
